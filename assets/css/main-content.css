@@ -1,0 +1,28 @@
+.top-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 560px;
+    background: var(--first-color);
+}
+
+.mid-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+.bottom-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px
+}
+
+.banner-content{
+    display: flex;
+    border: 1px solid black;
+    width: 75%;
+    height: 95%;
+}

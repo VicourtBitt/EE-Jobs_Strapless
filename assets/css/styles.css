@@ -1,0 +1,129 @@
+@import url("header.css");
+@import url("header-navigation.css");
+@import url("footer.css");
+@import url("main-content.css");
+@import url("text-content.css");
+@import url("sneaky-content.css");
+@import url("image-content.css");
+
+:root{
+    --first-color: #6C757D;
+    --second-color: #343a40;
+    --auxiliar: #17a2b8;
+    --auxiliar-secondary: #FFC107;
+    --button-color: #007bff;
+    --light: #FFFFFF;
+    --dark: #000000;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-indent: 0px;
+}
+
+@media (max-width: 575.8px) {
+    footer {
+        height: 160px;
+    }
+
+    .banner-content {
+        min-width: 330px
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.8px) {
+    .header-logo{
+        width: 160px;
+        height: 110px;
+    }
+
+    .text-content{
+        padding: 0.5em 4em;
+        box-sizing: border-box;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.8px) {
+    .banner-content{
+        width: 80%;
+    }
+
+    .top-banner{
+        height: 380px;
+    }
+
+    .header-navigation {
+        width: 520px;
+    }
+
+    .botao-cascata {
+        display: none;
+    }
+
+    .list-navigation{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 5px;
+    } 
+
+    .navigation-item{
+        text-align: center;
+        width: 19%;
+        display: inline-block;
+    }
+
+    .logo-text-box{
+        width: 220px;
+    }
+
+    .header-text{
+        display: block;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1440px) {
+    .banner-content{
+        width: 90%;
+        max-width: 1280px;
+    }
+
+    .header-logo{
+        width: 180px;
+        height: 125px;
+    }
+
+    .header-navigation {
+        width: 600px;
+    }
+
+    .botao-cascata {
+        display: none;
+    }
+
+    .list-navigation{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 5px;
+    } 
+
+    .navigation-item{
+        text-align: center;
+        width: 19%;
+        display: inline-block;
+    }
+
+    .text-content{
+        padding: 0.5em 1em;
+        box-sizing: border-box;
+        width: 50%;
+    }
+
+    .sneaky-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

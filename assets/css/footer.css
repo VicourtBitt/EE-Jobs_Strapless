@@ -2,7 +2,6 @@ footer{
     margin-top: 10px;
     background: var(--first-color);
     display: flex;
-    border: 1px solid red;
     height: 80px;
     max-height: auto;
     justify-content: space-around;

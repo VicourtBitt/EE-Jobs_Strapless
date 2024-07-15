@@ -1,0 +1,38 @@
+.sheet-title{
+    font-size: 34px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-weight: 200;
+    padding: 0.5em;
+}
+
+.card-social{
+    border: 1px solid #CCC;
+    height: 210px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card-icon{
+    font-size: 100px;
+}
+
+.card-clickable{
+    text-decoration: none;
+    width: 100%;
+}
+
+.card-social-title{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 200;
+    font-size: 28px;
+}
+
+.card-social-text{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 200px;
+    font-size: 18px;
+}

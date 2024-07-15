@@ -1,4 +1,8 @@
 .sneaky-content{
-    display: hidden;
+    display: none;
     width: 50%;
+}
+
+.sneaky-image{
+    height: 360px;
 }

@@ -47,12 +47,18 @@
 }
 
 .navigation-link{
+    background: var(--first-color);
+    border: 1px solid black;
     text-decoration: none;
     color: #343A40;
     font-weight: 600;
     display: block;
     transition: 500ms;
     border-radius: 15px;
+}
+
+.navigation-link:hover{
+    background: #CCC;
 }
 
 .navigation-link__login{

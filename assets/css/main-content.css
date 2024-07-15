@@ -4,12 +4,14 @@
     align-items: center;
     height: 560px;
     background: var(--first-color);
+    border: 1px solid black;
 }
 
 .mid-banner{
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid red;
     height: 600px;
 }
 
@@ -17,12 +19,32 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid blue;
     height: 400px
 }
 
 .banner-content{
     display: flex;
-    border: 1px solid black;
-    width: 75%;
+    border: 1px solid green;
+    width: 80%;
     height: 95%;
+}
+
+.section-content{
+    border: 1px solid purple;
+    display: flex;
+    width: 80%;
+    height: 95%;
+}
+
+.sneaky-content{
+    border: 1px solid yellow;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-content{
+    align-items: center;
+    border: 1px solid orange;
+    justify-content: center;
 }

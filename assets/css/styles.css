@@ -2,9 +2,12 @@
 @import url("header-navigation.css");
 @import url("footer.css");
 @import url("main-content.css");
-@import url("text-content.css");
+@import url("banner-text-content.css");
 @import url("sneaky-content.css");
 @import url("image-content.css");
+@import url("text-content.css");
+@import url("contact-us.css");
+@import url("card-content.css");
 
 :root{
     --first-color: #6C757D;
@@ -22,13 +25,58 @@
     text-indent: 0px;
 }
 
+body{
+    min-width: 385px;
+}
+
 @media (max-width: 575.8px) {
     footer {
         height: 160px;
     }
 
+    .top-banner{
+        height: 590px;
+    }
+
+    .mid-banner{
+        height: 900px;
+    }
+
+    .bottom-banner{
+        height: 800px;
+    }
+
     .banner-content {
         min-width: 330px
+    }
+
+    .section-content{
+        flex-wrap: wrap;
+    }
+
+    .image-content{
+        display: flex;
+        width: 100%;
+        height: 50%;
+    }
+
+    .text-content{
+        width: 100%;
+        height: 50%;
+    }
+
+    .banner-content{
+        flex-wrap: wrap;
+    }
+
+    .banner-image{
+        width: 320px;
+        height: auto;
+    }
+
+    .card-sheet{
+        height: 100%;
+        width: 100%;
     }
 }
 
@@ -38,7 +86,7 @@
         height: 110px;
     }
 
-    .text-content{
+    .banner-text-content{
         padding: 0.5em 4em;
         box-sizing: border-box;
     }
@@ -67,6 +115,9 @@
         justify-content: space-evenly;
         gap: 5px;
     } 
+    .banner-content-text, .banner-content-title{
+        width: 75%;
+    }
 
     .navigation-item{
         text-align: center;
@@ -80,6 +131,10 @@
 
     .header-text{
         display: block;
+    }
+
+    .image-content{
+        width: 50%;
     }
 }
 
@@ -115,8 +170,8 @@
         display: inline-block;
     }
 
-    .text-content{
-        padding: 0.5em 1em;
+    .banner-text-content{
+        padding: 0.5em 0.5em;
         box-sizing: border-box;
         width: 50%;
     }
@@ -125,5 +180,13 @@
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .top-banner{
+        height: 490px;
+    }
+
+    .user-register-buttons{
+        width: 95%;
     }
 }

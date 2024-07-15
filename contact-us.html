@@ -9,7 +9,7 @@
 
         <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
         
-        <title>EE-Jobs — Início</title>
+        <title>EE-Jobs — Contato</title>
     </head>
 
     <body>
@@ -60,23 +60,23 @@
                     </li>
 
                     <li class="navigation-item">
-                        <a href="contact-us.html" class="navigation-link">CONTATO</a>
+                        <a href="views/contact-us.html" class="navigation-link">CONTATO</a>
                     </li>
 
                     <li class="navigation-item">
-                        <a href="curriculum.html" class="navigation-link">CURRICULOS</a>
+                        <a href="views/curriculum.html" class="navigation-link">CURRICULOS</a>
                     </li>
 
                     <li class="navigation-item">
-                        <a href="our-partners.html" class="navigation-link">PARCERIAS</a>
+                        <a href="views/our-partners.html" class="navigation-link">PARCERIAS</a>
                     </li>
 
                     <li class="navigation-item">
-                        <a href="about-us.html" class="navigation-link">SOBRE</a>
+                        <a href="views/about-us.html" class="navigation-link">SOBRE</a>
                     </li>
 
                     <li class="navigation-item botao-login">
-                        <a href="login-screen.html" class="navigation-link navigation-link__login">Entrar</a>
+                        <a href="views/login-screen.html" class="navigation-link navigation-link__login">Entrar</a>
                     </li>
                 </ul>
 
@@ -87,52 +87,60 @@
             <!-- Banner que completa a parte superior do design -->
             <section class="top-banner">
                 <div class="banner-content">
-                    <div class="banner-text-content">
-                        <h1 class="banner-content-title">Suas experiências valorizadas</h1>
-                        <p class="banner-content-text">
-                            Ferramenta de realocação dos mais experiêntes do mercado. Aqui, valorizamos seus
-                            conhecimentos acima de tudo! Volte ao ápice, venha com e.e-jobs! Entre em contato abaixo.
-                        </p>
-
-                        <div class="user-register-buttons">
-                            <button class="button button-signin">Cadastre-se hoje!</button>
-                            <button class="button button-login">Já possuo cadastro</button>
-                        </div>
-
-                        <span class="availability-text">
-                            Disponível para
-                            <a href="" class="mobile-availability" disabled>
-                                <i class="fa-brands fa-android"></i>
-                            </a>
-
-                            <a href="" class="mobile-availability" disabled>
-                                <i class="fa-brands fa-apple"></i>
-                            </a>
-                        </span>
-                    </div>
-
                     <div class="sneaky-content">
-                        <img class="sneaky-image" src="assets/images/obj_elderly_man.webp" alt="Idoso sentado mexendo em um computador">
+                        <img class="sneaky-image" src="assets/images/obj_company.png" alt="Edifício Corporativo">
                     </div>
 
+                    <div class="banner-text-content">
+                        <h1 class="banner-content-title">Venha fazer parte!</h1>
+                        <p class="banner-content-text">
+                            Deseja fazer parte ou financiar algum projeto em específico?
+                            Entre em contato e cadastre sua empresa para fazer parte de uma
+                            das maiores ações direcionadas a realocação de pessoas no mercado
+                            de trabalho
+                        </p>
+                    </div>
                 </div>
 
             </section>
 
             <section class="mid-banner">
                 <div class="banner-content">
-                    <div class="image-content">
-                        <img class="banner-image" src="assets/images/obj_curriculum.png" alt="Desenho de um currículo">
+                    <div class="text-content">
+                        <h1 class="content-title">Quer virar nosso parceiro?</h1>
+                        <form class="formulary-box">
+                            <input type="text" class="company-input" id="company-name" placeholder="Insira o nome da empresa" required>
+                            <input type="email" class="company-input" id="company-email" placeholder="Insira o email da empresa" required>
+                            <select class="company-input">
+                                <option value="non-usable">Área de atuação</option>
+                                <option>Agronegócios</option>
+                                <option>Alimentícios</option>
+                                <option>Construção e Manutenção</option>
+                                <option>Educação</option>
+                                <option>Entretenimento</option>
+                                <option>Industrial</option>
+                                <option>Informática</option>
+                                <option>Publicidade</option>
+                                <option>Serviços Técnicos</option>
+                                <option>Urbanismo</option>
+                                <option>Vendas e Marketing</option>
+                                <option>Outros</option>
+                            </select>
+
+                            <select class="company-input">
+                                <option value="non-usable">Escolha uma opção de parceria</option>
+                                <option>Desejo patrocinar o projeto</option>
+                                <option>Desejo patrocinar um programa do projeto</option>
+                                <option>Desejo patrocinar um candidato em específico</option>
+                                <option>Desejo dar entrada em um programa</option>
+                            </select>
+
+                            <button class="button button-about">Enviar</button>
+                        </form>
                     </div>
 
-                    <div class="text-content">
-                        <h1 class="content-title">Mostre as suas capacitações</h1>
-                        <p class="content-text">
-                            Envie o seu currículo para as diversas empresas parceiras 
-                            do nosso programa. Ás vezes, o que elas mais precisam é de
-                            alguém com bastante experiência!
-                        </p>
-                        <a class="button button-about">Saiba mais</a>
+                    <div class="image-content">
+                        <img class="banner-image" src="assets/images/obj_corporation.png" alt="Desenho de um currículo">
                     </div>
 
                 </div>
@@ -140,18 +148,40 @@
 
             <section class="bottom-banner">
                 <div class="banner-content">
-                    <div class="text-content">
-                        <h1 class="content-title">Obtenha suporte</h1>
-                        <p class="content-text">
-                            Aqui, nosso programa tem um atendimento especializado direcionado 
-                            para você, assim como as nossas empresas parceiras. Estamos de braços
-                            abertos para dar todo suporte necessário para você.
-                        </p>
-                        <a class="button button-about">Saiba mais</a>
-                    </div>
+                    <div class="card-sheet">
+                        <h1 class="sheet-title">Visite às nossas redes sociais:</h1>
 
-                    <div class="image-content">
-                        <img class="banner-image" src="assets/images/obj_support_talk.png" alt="Desenho de um currículo">
+                        <div class="card-social">
+                            <a class="card-clickable" href="">
+                                <i class="card-icon fa-brands fa-square-facebook"></i>
+                                <h2 class="card-social-title">Facebook</h2>
+                                <span class=card-social-text>
+                                    Fique por dentro das nossas novidades!
+                                </span>
+                            </a>
+                        </div>
+
+                        <div class="card-social">
+                            <a class="card-clickable" href="">
+                                <i class="card-icon fa-brands fa-linkedin"></i>
+                                <h2 class="card-social-title">LinkedIn</h2>
+                                <span class=card-social-text>
+                                    Participe da nossa comunidade!
+                                </spa>
+                            </a>
+                        </div>
+
+                        <div class="card-social">
+                            <a class="card-clickable" href="">
+                                <i class="card-icon fa-brands fa-square-instagram"></i>
+                                <h2 class="card-social-title">Instagram</h2>
+                                <span class=card-social-text>
+                                    Acompanhe nossos eventos e programas!
+                                </span>
+                            </a>
+                        </div>
+
+
                     </div>
                 </div>
             </section>

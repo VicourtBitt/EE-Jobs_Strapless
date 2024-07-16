@@ -90,6 +90,57 @@ body{
         padding: 0.5em 4em;
         box-sizing: border-box;
     }
+
+    .mid-banner{
+        height: 800px;
+    }
+
+    .banner-content{
+        width: 75%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .banner-image{
+        height: 100%;
+    }
+
+    .image-content{
+        text-align: center;
+        width: 100%;
+        height: 50%;
+    }
+
+    .text-content{
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .bottom-banner{
+        height: 760px;
+    }
+
+    .content-title{
+        text-align: center;
+    }
+
+    .card-sheet{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .card-social{
+        width: 95%;
+    }
+    
+    .bottom-banner{
+        height: 760px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991.8px) {
@@ -134,11 +185,41 @@ body{
     }
 
     .image-content{
+        display: flex;
+        justify-content: center;
         width: 50%;
+    }
+
+    .text-content{
+        width: 50%;
+    }
+
+    .banner-image{
+        width: 100%;
+        height: auto;
+    }
+
+    .sheet-title{
+        width: 100%;
+    }
+
+    .card-sheet{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .card-social{
+        width: 33%;
+        height: 280px;
     }
 }
 
-@media (min-width: 992px) and (max-width: 1440px) {
+@media (min-width: 992px) and (max-width: 1439.8px) {
+    .header-text{
+        display: block;
+    }
+
     .banner-content{
         width: 90%;
         max-width: 1280px;
@@ -188,5 +269,79 @@ body{
 
     .user-register-buttons{
         width: 95%;
+    }
+
+    .image-content{
+        display: flex;
+        justify-content: center;
+        width: 50%;
+    }
+
+    .banner-image{
+        max-width: 450px;
+        width: 100%;
+        height: auto;
+    }
+
+    .sheet-title{
+        width: 100%;
+    }
+
+    .card-sheet{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .card-social{
+        width: 33%;
+        height: 280px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .header-text{
+        display: block;
+    }
+
+    .sneaky-content{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        width: 50%;
+    }
+
+    .image-content{
+        display: flex;
+        justify-content: center;
+        width: 50%;
+    }
+
+    .banner-image{
+        max-width: 450px;
+        height: auto;
+    }
+
+    .banner-text-content{
+        width: 50%;
+    }
+
+    .banner-content{
+        max-width: 1200px;
+    }
+
+    .sheet-title{
+        width: 100%;
+    }
+
+    .card-sheet{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .card-social{
+        width: 33%;
+        height: 280px;
     }
 }

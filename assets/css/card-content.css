@@ -16,6 +16,59 @@
     text-align: center;
 }
 
+.card-sheet{
+    width: 100%;
+}
+
+.card-founder{
+    height: 360px;
+    border: 1px solid #CCC;
+    border-radius: 10px;
+}
+
+.card-founder-list{
+    list-style-type: none;
+    text-align: center;
+}
+
+.card-founder-list > li {
+    line-height: 24px;
+}
+
+.card-founder-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+}
+
+.card-founder-text{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-founder-links{
+    display: flex;
+    justify-content: space-around;
+    font-size: 32px;
+    padding: 0.25em;
+}
+
+.founder-photo{
+    border-radius: 10px;
+    height: 160px;
+}
+
+.founder-name{
+    padding: 0.25em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    width: 100%;
+}
+
 .card-icon{
     font-size: 100px;
 }

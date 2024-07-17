@@ -1,4 +1,4 @@
-.top-banner{
+.main-banner{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,6 +21,13 @@
     align-items: center;
     border: 1px solid blue;
     height: 400px
+}
+
+.main-content{
+    display: flex;
+    border: 1px solid darkgreen;
+    width: 80%;
+    height: 95%;
 }
 
 .banner-content{

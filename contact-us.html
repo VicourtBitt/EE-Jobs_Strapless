@@ -7,22 +7,19 @@
         <!-- FontAwesome Icons -->
         <script src="https://kit.fontawesome.com/b493036c5c.js" crossorigin="anonymous"></script>
 
-        <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+        <!-- Navigation Bar Icon -->
+        <link rel="icon" type="favicon/text" href="./assets/icon/favicon.ico">
+
+        <!-- Specific Media Query -->
+        <link rel="stylesheet" type="text/css" href="assets/css/contact-us.css">
         
         <title>EE-Jobs — Contato</title>
     </head>
 
     <body>
         <!-- 
-            Dando um pequeno resumo dessa reconstrução do HTML:
-            Para os curiosos, a primeira versão havia sido feita utilizando bootstrap, que para quem não sabe, é um framework
-            para desenvolvimento web mais fácil e ágil, focando em clases pré-definidas e componentes pré-estilizados, o que já
-            alivia a vida do desenvolvedor. Porém, existem algumas limitações ao usar Bootstrap, literalmente quando você não 
-            está acostumado a utilizar ele tanto, você acaba perdendo a prática com ele e preferindo reutilizar o bom e velho HTML
-            CSS padrão.
-
-            Ainda iremos seguir uma estruturação MUITO semelhante, com as limitações de design que eu (Victor) como desenvolvedor
-            back-end sofro para criar designs interessantes.
+            Até que não foi tão complicado refazer essa tela, só preciso validar os formulários antes
+            de tudo.
 
             Ass: Victor Bittencourt
         -->
@@ -60,23 +57,23 @@
                     </li>
 
                     <li class="navigation-item">
-                        <a href="views/contact-us.html" class="navigation-link">CONTATO</a>
+                        <a href="contact-us.html" class="navigation-link">CONTATO</a>
                     </li>
 
                     <li class="navigation-item">
-                        <a href="views/curriculum.html" class="navigation-link">CURRICULOS</a>
+                        <a href="curriculum.html" class="navigation-link">CURRICULOS</a>
                     </li>
 
                     <li class="navigation-item">
-                        <a href="views/our-partners.html" class="navigation-link">PARCERIAS</a>
+                        <a href="our-partners.html" class="navigation-link">PARCERIAS</a>
                     </li>
 
                     <li class="navigation-item">
-                        <a href="views/about-us.html" class="navigation-link">SOBRE</a>
+                        <a href="about-us.html" class="navigation-link">SOBRE</a>
                     </li>
 
                     <li class="navigation-item botao-login">
-                        <a href="views/login-screen.html" class="navigation-link navigation-link__login">Entrar</a>
+                        <a href="login-screen.html" class="navigation-link navigation-link__login">Entrar</a>
                     </li>
                 </ul>
 
@@ -85,15 +82,15 @@
 
         <main>
             <!-- Banner que completa a parte superior do design -->
-            <section class="top-banner">
-                <div class="banner-content">
-                    <div class="sneaky-content">
-                        <img class="sneaky-image" src="assets/images/obj_company.png" alt="Edifício Corporativo">
+            <section class="main-banner">
+                <div class="main-content">
+                    <div class="top-image-content">
+                        <img class="top-sneaky-image" src="assets/images/obj_company.png" alt="Edifício Corporativo">
                     </div>
 
-                    <div class="banner-text-content">
-                        <h1 class="banner-content-title">Venha fazer parte!</h1>
-                        <p class="banner-content-text">
+                    <div class="main-text-content">
+                        <h1 class="main-text-title">Venha fazer parte!</h1>
+                        <p class="main-text-parag">
                             Deseja fazer parte ou financiar algum projeto em específico?
                             Entre em contato e cadastre sua empresa para fazer parte de uma
                             das maiores ações direcionadas a realocação de pessoas no mercado
@@ -110,9 +107,13 @@
                         <h1 class="content-title">Quer virar nosso parceiro?</h1>
                         <form class="formulary-box">
                             <input type="text" class="company-input" id="company-name" placeholder="Insira o nome da empresa" required>
+                            <!-- <span></span> -->
+
                             <input type="email" class="company-input" id="company-email" placeholder="Insira o email da empresa" required>
+                            <!-- <span></span> -->
+
                             <select class="company-input">
-                                <option value="non-usable">Área de atuação</option>
+                                <option value="placeholder">Área de atuação</option>
                                 <option>Agronegócios</option>
                                 <option>Alimentícios</option>
                                 <option>Construção e Manutenção</option>
@@ -126,14 +127,16 @@
                                 <option>Vendas e Marketing</option>
                                 <option>Outros</option>
                             </select>
+                            <!-- <span></span> -->
 
                             <select class="company-input">
-                                <option value="non-usable">Escolha uma opção de parceria</option>
+                                <option value="placeholder">Escolha uma opção de parceria</option>
                                 <option>Desejo patrocinar o projeto</option>
                                 <option>Desejo patrocinar um programa do projeto</option>
                                 <option>Desejo patrocinar um candidato em específico</option>
                                 <option>Desejo dar entrada em um programa</option>
                             </select>
+                            <!-- <span></span> -->
 
                             <button class="button button-about">Enviar</button>
                         </form>

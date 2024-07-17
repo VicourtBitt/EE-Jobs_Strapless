@@ -1,8 +1,12 @@
-.sneaky-content{
+.top-image-content{
     display: none;
     width: 50%;
 }
 
-.sneaky-image{
+.top-sneaky-image{
     height: 360px;
+}
+
+.top-image{
+    width: 50%;
 }

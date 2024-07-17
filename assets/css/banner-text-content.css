@@ -1,4 +1,4 @@
-.banner-text-content{
+.main-text-content{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -7,14 +7,14 @@
     box-sizing: border-box;
 }
 
-.banner-content-title{
+.main-text-title{
     color: var(--light);
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 54px;
     font-weight: 200;
 }
 
-.banner-content-text{
+.main-text-parag{
     padding: 1em 0em;
     color: var(--light);
     text-align: justify;

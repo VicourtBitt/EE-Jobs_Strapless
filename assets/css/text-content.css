@@ -52,10 +52,6 @@
     line-height: 28px;
 }
 
-.banner-image{
-    height: 480px;
-}
-
 .button-about{
     background: var(--auxiliar);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;

@@ -66,6 +66,7 @@
     padding: 0.25em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
+    font-size: 18px;
     width: 100%;
 }
 
@@ -88,4 +89,22 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width: 200px;
     font-size: 18px;
+}
+
+.card-partner{
+    width: 33%;
+    border: 1px solid black;
+    height: 33%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 500ms;
+}
+
+.card-partner:hover{
+    background: #d1d2d3;
+}
+.partner-logo{
+    width: 80%;
 }

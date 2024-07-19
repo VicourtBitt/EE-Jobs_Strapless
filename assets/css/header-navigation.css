@@ -10,6 +10,8 @@
 .botao-cascata{
     border: 1px solid black;
     display: block;
+    transition: 1000ms;
+    font-size: 34px;
     text-align: center;
     background: none;
     border-radius: 15px;
@@ -34,12 +36,6 @@
     font-size: 14px;
     width: 100%;
     border-radius: 15px;
-}
-
-.botao-cascata{
-    display: block;
-    transition: 1000ms;
-    font-size: 34px;
 }
 
 .checkbox-cascata{

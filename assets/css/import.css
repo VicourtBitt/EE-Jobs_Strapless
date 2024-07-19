@@ -1,0 +1,31 @@
+@import url("header.css");
+@import url("header-navigation.css");
+@import url("footer.css");
+@import url("main-content.css");
+@import url("banner-text-content.css");
+@import url("sneaky-content.css");
+@import url("image-content.css");
+@import url("text-content.css");
+@import url("contact-us.css");
+@import url("card-content.css");
+@import url("forms.css");
+
+:root{
+    --first-color: #6C757D;
+    --second-color: #343a40;
+    --auxiliar: #17a2b8;
+    --auxiliar-secondary: #FFC107;
+    --button-color: #007bff;
+    --light: #FFFFFF;
+    --dark: #000000;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-indent: 0px;
+}
+
+body{
+    min-width: 385px;
+}

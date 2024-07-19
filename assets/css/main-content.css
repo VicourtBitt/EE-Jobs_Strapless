@@ -37,13 +37,6 @@
     height: 95%;
 }
 
-.section-content{
-    border: 1px solid purple;
-    display: flex;
-    width: 80%;
-    height: 95%;
-}
-
 .sneaky-content{
     border: 1px solid yellow;
     align-items: center;

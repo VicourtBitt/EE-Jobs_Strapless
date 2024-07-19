@@ -1,0 +1,23 @@
+.formulary-box{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+.formulary-input{
+    width: 100%;
+    height: 38px;
+    border-radius: 10px;
+    background: var(--light);
+    text-indent: 10px;
+}
+
+.formulary-line{
+    width: 100%;
+}
+
+.input-label{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

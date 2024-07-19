@@ -1,5 +1,20 @@
 @import url("import.css");
 
+.formulary-box{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 80%;
+}
+
+.company-input{
+    width: 100%;
+    height: 38px;
+    border-radius: 10px;
+    background: var(--light);
+    text-indent: 10px;
+}
+
 @media (max-width: 575.8px) {
 
     /* ############# HEADER AND FOOTER ############# */
@@ -13,7 +28,7 @@
     /* ############# CONTENT SECTION #############  */
 
     .main-banner{
-        height: 400px;
+        height: 660px;
     }
 
     .mid-banner{
@@ -31,6 +46,28 @@
 
     /* ############# INSIDE CONTENT ############# */
     /* ############# INSIDE CONTENT ############# */
+    .content-title{
+        font-size: 32px;
+    }
+
+    .content-text{
+        font-size: 18px;
+        width: 80%;
+    }
+
+    .content-list{
+        width: 80%;
+    }
+
+    .content-item{
+        font-size: 18px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        line-height: 28px;
+    }
+
+    .main-text-title{
+        font-size: 30px;
+    }
 
     .image-content{
         display: flex;
@@ -47,6 +84,24 @@
         width: 320px;
         height: auto;
     }
+
+    .formulary-box{
+        display: flex;
+        justify-content: end;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .formulary-input{
+        width: 77%;
+    }
+
+    .input-label{
+        line-height: 40px;
+        width: 20%;
+        display: inline-block;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767.8px) {
@@ -61,7 +116,7 @@
     /* ############# CONTENT SECTION #############  */
     /* ############# CONTENT SECTION #############  */
     .main-banner{
-        height: 340px;
+        height: 640px;
     }
 
     .mid-banner{
@@ -81,6 +136,29 @@
 
     /* ############# INSIDE CONTENT ############# */
     /* ############# INSIDE CONTENT ############# */
+    .content-title{
+        font-size: 32px;
+    }
+
+    .content-text{
+        font-size: 18px;
+        width: 80%;
+    }
+
+    .content-list{
+        width: 80%;
+    }
+
+    .content-item{
+        font-size: 18px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        line-height: 28px;
+    }
+
+    .main-text-title{
+        font-size: 30px;
+    }
+
     .banner-text-content{
         padding: 0.5em 4em;
         box-sizing: border-box;
@@ -106,20 +184,22 @@
         text-align: center;
     }
 
-    /* ############# CARD CONTENT ############# */
-    /* ############# CARD CONTENT ############# */
-    .sheet-title{
+    .formulary-box{
+        display: flex;
+        justify-content: end;
+        flex-direction: row;
+        flex-wrap: wrap;
         width: 100%;
     }
 
-    .card-social{
-        width: 100%
+    .formulary-input{
+        width: 77%;
     }
 
-    .card-sheet{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+    .input-label{
+        line-height: 40px;
+        width: 20%;
+        display: inline-block;
     }
 }
 
@@ -163,11 +243,34 @@
     }
 
     .main-banner{
-        height: 360px;
+        height: 400px;
     }
 
     /* ############# INSIDE CONTENT ############# */
     /* ############# INSIDE CONTENT ############# */
+    .content-title{
+        font-size: 32px;
+    }
+
+    .content-text{
+        font-size: 18px;
+        width: 80%;
+    }
+
+    .content-list{
+        width: 80%;
+    }
+
+    .content-item{
+        font-size: 18px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        line-height: 28px;
+    }
+    
+    .main-text-title{
+        font-size: 30px;
+    }
+
     .banner-content-text, .banner-content-title{
         width: 75%;
     }
@@ -187,20 +290,40 @@
         height: auto;
     }
 
-    /* ############# CARD CONTENT ############# */
-    /* ############# CARD CONTENT ############# */
-    .sheet-title{
+    .content-title{
+        font-size: 32px;
+    }
+
+    .content-text{
+        width: 75%;
+    }
+
+    .content-item{
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        line-height: 28px;
+    }
+
+    .formulary-box{
+        display: flex;
+        justify-content: end;
+        flex-direction: row;
+        flex-wrap: wrap;
         width: 100%;
     }
 
-    .card-social{
-        width: 33%
+    .formulary-input{
+        width: 65%;
     }
 
-    .card-sheet{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+    .input-label{
+        line-height: 40px;
+        width: 30%;
+        display: inline-block;
+    }
+    
+    .button{
+        width: 140px;
     }
 }
 
@@ -240,13 +363,25 @@
 
     /* ############# CONTENT SECTION #############  */
     /* ############# CONTENT SECTION #############  */
+    .main-text-title{
+        font-size: 32px;
+    }
+
     .banner-content, .main-content{
         width: 90%;
         max-width: 1280px;
     }
 
     .main-banner{
-        height: 450px;
+        height: 355px;
+    }
+
+    .mid-banner{
+        height: 420px;
+    }
+
+    .bottom-banner{
+        height: 540px;
     }
 
     .banner-text-content{
@@ -257,6 +392,20 @@
 
     /* ############# INSIDE CONTENT ############# */
     /* ############# INSIDE CONTENT ############# */
+    .content-title{
+        font-size: 32px;
+    }
+
+    .content-text{
+        width: 75%;
+    }
+
+    .content-item{
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        line-height: 28px;
+    }
+
     .top-image-content{
         display: flex;
         align-items: center;
@@ -267,16 +416,26 @@
         width: 95%;
     }
 
+    .formulary-box{
+        width: 65%;
+    }
+
+    .text-content{
+        display: flex;
+        align-self: center;
+        height: 60%;
+        width: 60%;
+    }
+
     .image-content{
         display: flex;
         justify-content: center;
-        width: 50%;
+        width: 40%;
     }
 
     .banner-image{
-        max-width: 450px;
-        width: 100%;
-        height: auto;
+        max-height: 300px;
+        width: auto;
     }
 
     /* ############# CARD CONTENT ############# */
@@ -306,12 +465,20 @@
 
     /* ############# CONTENT SECTION #############  */
     /* ############# CONTENT SECTION #############  */
+    .main-banner{
+        height: 360px;
+    }
+
     .banner-content, .main-content{
         max-width: 1200px;
     }
 
     /* ############# INSIDE CONTENT ############# */
     /* ############# INSIDE CONTENT ############# */
+    .main-text-title{
+        font-size: 32px;
+    }
+
     .top-image-content{
         display: flex;
         justify-content: center;
@@ -326,7 +493,7 @@
     }
 
     .banner-image{
-        max-width: 450px;
+        max-height: 300px;
         height: auto;
     }
 

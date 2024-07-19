@@ -1,13 +1,4 @@
-@import url("header.css");
-@import url("header-navigation.css");
-@import url("footer.css");
-@import url("main-content.css");
-@import url("banner-text-content.css");
-@import url("sneaky-content.css");
-@import url("image-content.css");
-@import url("text-content.css");
-@import url("contact-us.css");
-@import url("card-content.css");
+@import url("import.css");
 
 /* 
 
@@ -26,48 +17,6 @@ INSIDE CONTENT = Todo conteudo independente dentro do banner-content
 no HTML. ALTERAR TAGS DE NOME ULTRA GENERICO
 
 */
-
-:root{
-    --first-color: #6C757D;
-    --second-color: #343a40;
-    --auxiliar: #17a2b8;
-    --auxiliar-secondary: #FFC107;
-    --button-color: #007bff;
-    --light: #FFFFFF;
-    --dark: #000000;
-}
-
-* {
-    margin: 0px;
-    padding: 0px;
-    text-indent: 0px;
-}
-
-body{
-    min-width: 385px;
-}
-
-.about-us-content{
-    border: 1px solid yellow;
-}
-
-.founders{
-    background: var(--first-color);
-    display: block;
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: -4px 4px 2px black;
-}
-
-.founders-title{
-    width: 100%;
-    text-align: center;
-    line-height: 60px;
-    font-size: 28px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: var(--light);
-    font-weight: 200;
-}
 
 @media (max-width: 575.8px) {
 

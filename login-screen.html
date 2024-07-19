@@ -11,9 +11,9 @@
         <link rel="icon" type="favicon/text" href="./assets/icon/favicon.ico">
 
         <!-- Specific Media Query -->
-        <link rel="stylesheet" type="text/css" href="assets/css/contact-us.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/login-screen.css">
         
-        <title>EE-Jobs — Contato</title>
+        <title>EE-Jobs — Login</title>
     </head>
 
     <body>
@@ -84,18 +84,33 @@
             <!-- Banner que completa a parte superior do design -->
             <section class="main-banner">
                 <div class="main-content">
-                    <div class="top-image-content">
-                        <img class="top-sneaky-image" src="assets/images/obj_company.png" alt="Edifício Corporativo">
+                    <div class="main-text-content">
+                        <h1 class="main-text-title">Já fez o seu cadastro?</h1>
+                        <form class="formulary-box">
+                            <label class="input-label" for="email-login">Email: </label>
+                            <input type="email" class="formulary-input" id="loginEmail" name="email-login" required>
+
+                            <label class="input-label" for="email-password">Senha: </label>
+                            <input type="password" class="formulary-input" id="loginPassword" name="password-login" required>
+
+                            <button class="button button-signin">Login</button>
+                        </form>
                     </div>
 
                     <div class="main-text-content">
-                        <h1 class="main-text-title">Venha fazer parte!</h1>
-                        <p class="main-text-parag">
-                            Deseja fazer parte ou financiar algum projeto em específico?
-                            Entre em contato e cadastre sua empresa para fazer parte de uma
-                            das maiores ações direcionadas a realocação de pessoas no mercado
-                            de trabalho
-                        </p>
+                        <h1 class="main-text-title">Quer se cadastrar?</h1>
+                        <form class="formulary-box">
+                            <label class="input-label" for="email-password">Nome: </label>
+                            <input type="password" class="formulary-input" id="signName" name="password-login" required>
+
+                            <label class="input-label" for="email-password">Sobrenome: </label>
+                            <input type="password" class="formulary-input" id="signLastname" name="password-login" required>
+
+                            <label class="input-label" for="email-login">Email: </label>
+                            <input type="email" class="formulary-input" id="signEmail" name="email-login" required>
+
+                            <button class="button button-signin">Cadastre-se</button>
+                        </form>
                     </div>
                 </div>
 
@@ -103,8 +118,30 @@
 
             <section class="mid-banner">
                 <div class="banner-content">
+                    <div class="image-content">
+                        <img class="banner-image" src="assets/images/obj_people-help.png" alt="Desenho de um currículo">
+                    </div>
+
                     <div class="text-content">
-                        <h1 class="content-title">Quer virar nosso parceiro?</h1>
+                        <h1 class="content-title">Benefícios de se Cadastrar na E&E</h1>
+                        <p class="content-text">
+                            Ao se cadastrar na "Elderly & Experienced" você abre portas
+                            tanto para nossa causa, como para novas experiências chegarem até você. 
+                            Tirando outras regalias que nós podemos oferecer:
+                            <ul class="content-list">
+                                <li class="content-item">Suporte na relação candidado-empresa;</li>
+                                <li class="content-item">Programas de conexão entre candidatos;</li>
+                                <li class="content-item">Atendimento e suporte individual.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bottom-banner">
+                <div class="banner-content">
+                    <div class="text-content">
+                        <h1 class="content-title">Alguma dúvida ou sugestão?</h1>
                         <form class="formulary-box">
                             <input type="text" class="formulary-input" id="company-name" placeholder="Insira o nome da empresa" required>
                             <!-- <span></span> -->
@@ -143,48 +180,7 @@
                     </div>
 
                     <div class="image-content">
-                        <img class="banner-image" src="assets/images/obj_corporation.png" alt="Desenho de um currículo">
-                    </div>
-
-                </div>
-            </section>
-
-            <section class="bottom-banner">
-                <div class="banner-content">
-                    <div class="card-sheet">
-                        <h1 class="sheet-title">Visite às nossas redes sociais:</h1>
-
-                        <div class="card-social">
-                            <a class="card-clickable" href="">
-                                <i class="card-icon fa-brands fa-square-facebook"></i>
-                                <h2 class="card-social-title">Facebook</h2>
-                                <span class=card-social-text>
-                                    Fique por dentro das nossas novidades!
-                                </span>
-                            </a>
-                        </div>
-
-                        <div class="card-social">
-                            <a class="card-clickable" href="">
-                                <i class="card-icon fa-brands fa-linkedin"></i>
-                                <h2 class="card-social-title">LinkedIn</h2>
-                                <span class=card-social-text>
-                                    Participe da nossa comunidade!
-                                </spa>
-                            </a>
-                        </div>
-
-                        <div class="card-social">
-                            <a class="card-clickable" href="">
-                                <i class="card-icon fa-brands fa-square-instagram"></i>
-                                <h2 class="card-social-title">Instagram</h2>
-                                <span class=card-social-text>
-                                    Acompanhe nossos eventos e programas!
-                                </span>
-                            </a>
-                        </div>
-
-
+                        <img class="banner-image" src="assets/images/obj_question-mark.png" alt="Desenho de um currículo">
                     </div>
                 </div>
             </section>

@@ -462,11 +462,24 @@ no HTML. ALTERAR TAGS DE NOME ULTRA GENERICO
 
     .mid-banner{
         padding: 0.5em ;
-        height: 60px;
+        height: 760px;
     }
     
+    .bottom-banner{
+        height: 140px;
+    }
+
     /* ############# INSIDE CONTENT ############# */
     /* ############# INSIDE CONTENT ############# */
+    .banner-text-content{
+        text-align: center;
+    }
+
+    .banner-content{
+        display: flex;
+        justify-content: center;
+    }
+
     .image-content{
         display: flex;
         justify-content: center;

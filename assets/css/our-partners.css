@@ -19,404 +19,109 @@ no HTML. ALTERAR TAGS DE NOME ULTRA GENERICO
 */
 
 @media (max-width: 575.8px) {
-
-    /* ############# HEADER AND FOOTER ############# */
-    /* ############# HEADER AND FOOTER ############# */
-    footer {
-        height: 160px;
-    }
-
-    /* ############# CONTENT SECTION #############  */
-    /* ############# CONTENT SECTION #############  */
     .main-banner{
-        height: 580px;
+        max-height: 480px;
     }
 
-    .main-content{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-    }
-
-    .main-banner .banner-content{
-        justify-content: center;
+    .main-text-content{
+        padding: 0.5em 2em;
+        box-sizing: border-box;
     }
 
     .mid-banner{
-        padding: 0.5em ;
-        height: 1660px;
+        height: 1640px;
     }
 
     .bottom-banner{
-        height: 220px;
-    }
-
-    .banner-content {
-        flex-wrap: wrap;
-        min-width: 330px
-    }
-
-    /* ############# INSIDE CONTENT ############# */
-    /* ############# INSIDE CONTENT ############# */
-    .image-content{
-        display: flex;
-        width: 100%;
-        height: 50%;
-    }
-
-    .text-content{
-        width: 100%;
-        height: 50%;
-    }
-
-    .banner-image{
-        width: 320px;
-        height: auto;
-    }
-
-    .main-text-parag{
+        max-height: 260px;
+        box-sizing: border-box;
         text-align: center;
     }
 
-    .top-image-content{
-        width: 100%;
+    .content-text{
+        padding: 0.5em 2em;
+        box-sizing: border-box;
+    }
+
+    .card-sheet{
         display: flex;
-        justify-content: center;
-    }
-
-    .top-image{
-        width: 280px;
-    }
-
-    .partner-logo{
-        height: 70%;
-        width: 70%;
+        flex-wrap: wrap;
     }
 
     .card-partner{
         width: 100%;
-        height: 11%;
+        height: calc(100%/9)
+    }
+
+    .partner-logo{
+        width: 50%;
     }
 }
 
 @media (min-width: 576px) and (max-width: 767.8px) {
-
-    /* ############# HEADER AND FOOTER ############# */
-    /* ############# HEADER AND FOOTER ############# */
-    .header-logo{
-        width: 160px;
-        height: 110px;
+    .main-content{
+        max-height: 440px;
     }
 
-    /* ############# CONTENT SECTION ############# */
-    /* ############# CONTENT SECTION ############# */
     .main-banner{
-        height: 580px;
-    }
-
-    .main-banner .banner-content{
-        justify-content: center;
+        max-height: 480px;
     }
 
     .mid-banner{
-        padding: 0.5em ;
-        height: 2056px;
+        height: 1640px;
     }
 
     .bottom-banner{
-        height: 240px;
+        max-height: 260px;
+        text-align: center;
     }
 
-    .banner-content{
-        width: 75%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    /* ############# INSIDE CONTENT ############# */
-    /* ############# INSIDE CONTENT ############# */
-    .main-text-content{
-        padding: 0.5em 4em;
+    .content-text{
+        padding: 0.5em 2em;
         box-sizing: border-box;
     }
 
-    .main-text-parag{
-        text-align: center;
-    }
-
-    .banner-image{
-        height: 100%;
-    }
-
-    .image-content{
-        text-align: center;
-        width: 100%;
-        height: 50%;
-    }
-
-    .text-content{
-        width: 100%;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    .content-title{
-        text-align: center;
-    }
-
-    .top-image-content{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
     .card-sheet{
-        justify-content: space-evenly;
-        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .card-partner{
-        height: 11%;
         width: 100%;
+        height: calc(100%/9)
     }
 
     .partner-logo{
-        height: 70%;
+        width: 50%;
     }
 }
 
 @media (min-width: 768px) and (max-width: 991.8px) {
-
-    /* ############# HEADER AND FOOTER ############# */
-    /* ############# HEADER AND FOOTER ############# */
-    .header-navigation {
-        width: 520px;
-    }
-
-    .list-navigation{
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-        gap: 5px;
-    } 
-
-    .navigation-item{
-        text-align: center;
-        width: 19%;
-        display: inline-block;
-    }
-
-    .logo-text-box{
-        width: 220px;
-    }
-
-    .header-text{
-        display: block;
-    }
-
-    /* ############# CONTENT SECTION ############# */
-    /* ############# CONTENT SECTION ############# */
-    .main-banner{
-        height: 580px;
-    }
-
-    .banner-content, .main-content{
-        width: 75%;
-    }
-
-    .main-content{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .mid-banner{
-        padding: 0.5em ;
-        height: 920px;
-    }
-
     .bottom-banner{
-        height: 200px;
-    }
-
-    /* ############# INSIDE CONTENT ############# */
-    /* ############# INSIDE CONTENT ############# */
-    .botao-cascata {
-        display: none;
-    }
-
-    .image-content{
-        display: flex;
-        justify-content: center;
-        width: 50%;
-    }
-
-    .text-content{
-        width: 50%;
-    }
-
-    .banner-image{
-        width: 100%;
-        height: auto;
-    }
-
-    .banner-content-text{
+        max-height: 160px;
         text-align: center;
-    }
-
-    .main-text-parag, .main-text-title{
-        width: 75%;
-        text-align: center;
-    }
-
-    .top-image-content{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .top-image{
-        height: 200px;
-        width: auto;
-    }
-
-    .card-sheet{
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
-    .card-partner{
-        height: 20%;
-        width: 49.5%
-    }
-
-    .partner-logo{
-        width: 70%;
     }
 
     .banner-text-content{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .button{
-        width: 220px;
-    }
-
-    .content-text{
-        width: 75%;
+        padding: 0.5em 2em;
+        box-sizing: border-box;
     }
 }
 
-
 @media (min-width: 992px) and (max-width: 1439.8px) {
-
-    /* ############# HEADER AND FOOTER ############# */
-    /* ############# HEADER AND FOOTER ############# */
-    .header-text{
-        display: block;
-    }
-
-    .header-logo{
-        width: 180px;
-        height: 125px;
-    }
-
-    .header-navigation {
-        width: 600px;
-    }
-
-    .list-navigation{
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-        gap: 5px;
-    } 
-
-    .navigation-item{
-        text-align: center;
-        width: 19%;
-        display: inline-block;
-    }
-
-    /* ############# CONTENT SECTION ############# */
-    /* ############# CONTENT SECTION ############# */
     .main-banner{
-        height: 580px;
-    }
-
-    .banner-content{
-        width: 65%;
-        max-width: 1280px;
+        height: 460px
     }
 
     .main-content{
-        width: 75%;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .mid-banner{
-        padding: 0.5em ;
-        height: 500px;
-    }
-
-    .bottom-banner{
-        height: 140px;
-    }
-    /* ############# INSIDE CONTENT ############# */
-    /* ############# INSIDE CONTENT ############# */
-    .botao-cascata {
-        display: none;
-    }
-
-    .banner-text-content{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 0.5em 0.5em;
-        box-sizing: border-box;
-        width: 100%;
-    }
-
-    .button{
-        width: 200px;
-        height: 40px;
-        line-height: 40px;
-    }
-
-    .content-text{
-        text-align: center;
-    }
-
-    .sneaky-content{
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
+        flex-direction: column;
     }
 
-    .user-register-buttons{
-        width: 95%;
-    }
-
-    .image-content{
-        display: flex;
-        justify-content: center;
-        width: 50%;
-    }
-
-    .banner-image{
-        max-width: 450px;
-        width: 100%;
-        height: auto;
+    .main-text-content{
+        width: 80%;
     }
 
     .main-text-parag{
@@ -424,83 +129,86 @@ no HTML. ALTERAR TAGS DE NOME ULTRA GENERICO
     }
 
     .top-image{
-        height: 260px;
-        width: auto;
+        width: 350px;
     }
 
-    .card-sheet{
-        justify-content: space-evenly;
+    .bottom-banner{
+        display: flex;
+        height: 180px;
+        padding: 0.5em 3em;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .bottom-banner > .banner-content{
         align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .content-text{
+        text-align: center;
+    }
+    
+    .card-sheet{
+        max-width: 1080px;
+        margin: 0px auto;
     }
 }
 
 @media (min-width: 1440px) {
-
-    /* ############# HEADER AND FOOTER ############# */
-    /* ############# HEADER AND FOOTER ############# */
-    .header-text{
-        display: block;
-    }
-
-    /* ############# CONTENT SECTION ############# */
-    /* ############# CONTENT SECTION ############# */
     .main-banner{
-        height:400px
-    }
-
-    .banner-content, .main-content{
-        width: 65%;
-        max-width: 1200px;
+        height: 460px
     }
 
     .main-content{
+        max-width: 1080px;
         display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
     }
 
-    .mid-banner{
-        padding: 0.5em ;
-        height: 760px;
-    }
-    
-    .bottom-banner{
-        height: 140px;
-    }
-
-    /* ############# INSIDE CONTENT ############# */
-    /* ############# INSIDE CONTENT ############# */
-    .banner-text-content{
-        text-align: center;
-    }
-
-    .banner-content{
-        display: flex;
-        justify-content: center;
-    }
-
-    .image-content{
-        display: flex;
-        justify-content: center;
-        width: 50%;
-    }
-
-    .banner-image{
-        max-width: 450px;
-        height: auto;
+    .main-text-content{
+        width: 80%;
     }
 
     .main-text-parag{
         text-align: center;
     }
 
-    .card-founder{
-        width: 24%;
+    .top-image{
+        width: 350px;
     }
 
-    .card-sheet{
-        justify-content: space-evenly;
+    .banner-content{
+        max-width: 1080px;
+    }
+
+    .mid-banner{
+        max-height: 900px;
+    }
+
+    .bottom-banner{
+        display: flex;
+        height: 180px;
+        padding: 0.5em 3em;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .bottom-banner > .banner-content{
         align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .content-text{
+        text-align: center;
+    }
+    
+    .card-sheet{
+        max-width: 1080px;
+        margin: 0px auto;
     }
 }

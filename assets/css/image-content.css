@@ -1,3 +1,9 @@
 .banner-image{
-    height: 480px;
+    width: 320px;
+    height: auto;
+    transition: 500ms;
+
+    &:hover{
+        transform: scale(1.05);
+    }
 }

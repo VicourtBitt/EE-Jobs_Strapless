@@ -1,352 +1,118 @@
 @import url("import.css");
 
 @media (max-width: 575.8px) {
-
-    /* ############# HEADER AND FOOTER ############# */
-    /* ############# HEADER AND FOOTER ############# */
-
-    footer {
-        height: 160px;
-    }
-
-    /* ############# CONTENT SECTION #############  */
-    /* ############# CONTENT SECTION #############  */
-
-    .main-banner{
-        height: 400px;
-    }
-
-    .mid-banner{
-        height: 900px;
-    }
-
     .bottom-banner{
-        height: 800px;
+        height: 1020px;
     }
 
-    .banner-content, .main-content {
-        flex-wrap: wrap;
-        min-width: 330px
-    }
-
-    /* ############# INSIDE CONTENT ############# */
-    /* ############# INSIDE CONTENT ############# */
-
-    .image-content{
-        display: flex;
-        width: 100%;
-        height: 50%;
-    }
-
-    .text-content{
-        width: 100%;
-        height: 50%;
-    }
-
-    .banner-image{
-        width: 320px;
-        height: auto;
+    .card-social{
+        height: 280px;
     }
 }
 
 @media (min-width: 576px) and (max-width: 767.8px) {
-
-    /* ############# HEADER AND FOOTER ############# */
-    /* ############# HEADER AND FOOTER ############# */
-    .header-logo{
-        width: 160px;
-        height: 110px;
-    }
-
-    /* ############# CONTENT SECTION #############  */
-    /* ############# CONTENT SECTION #############  */
-    .main-banner{
-        height: 340px;
-    }
-
-    .mid-banner{
-        height: 800px;
-    }
-
-    .bottom-banner{
-        height: 840px;
-    }
-
-    .banner-content, .main-content{
-        width: 75%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    /* ############# INSIDE CONTENT ############# */
-    /* ############# INSIDE CONTENT ############# */
-    .banner-text-content{
-        padding: 0.5em 4em;
+    .sheet-title{
+        padding: 0.5em 2em;
         box-sizing: border-box;
     }
 
-    .banner-image{
-        height: 100%;
-    }
-
-    .image-content{
-        text-align: center;
-        width: 100%;
-        height: 50%;
-    }
-
-    .text-content{
-        width: 100%;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    .content-title{
-        text-align: center;
-    }
-
-    /* ############# CARD CONTENT ############# */
-    /* ############# CARD CONTENT ############# */
-    .sheet-title{
-        width: 100%;
-    }
-
-    .card-social{
-        width: 100%
-    }
-
-    .card-sheet{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+    .bottom-banner{
+        height: 800px;
     }
 }
 
 @media (min-width: 768px) and (max-width: 991.8px) {
-
-    /* ############# HEADER AND FOOTER ############# */
-    /* ############# HEADER AND FOOTER ############# */
-    .navigation-item{
-        text-align: center;
-        width: 19%;
-        display: inline-block;
-    }
-
-    .logo-text-box{
-        width: 220px;
-    }
-
-    .header-text{
-        display: block;
-    }
-
-    .header-navigation {
-        width: 520px;
-    }
-
-    .botao-cascata {
-        display: none;
-    }
-
-    .list-navigation{
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-        gap: 5px;
-    } 
-
-    /* ############# CONTENT SECTION #############  */
-    /* ############# CONTENT SECTION #############  */
-    .banner-content, .main-content{
-        width: 80%;
-    }
-
-    .main-banner{
-        height: 360px;
-    }
-
-    /* ############# INSIDE CONTENT ############# */
-    /* ############# INSIDE CONTENT ############# */
-    .banner-content-text, .banner-content-title{
-        width: 75%;
-    }
-
-    .image-content{
-        display: flex;
-        justify-content: center;
-        width: 50%;
-    }
-
-    .text-content{
-        width: 50%;
-    }
-
-    .banner-image{
-        width: 100%;
-        height: auto;
-    }
-
-    /* ############# CARD CONTENT ############# */
-    /* ############# CARD CONTENT ############# */
     .sheet-title{
         width: 100%;
+        padding: 0.5em 2em;
+        box-sizing: border-box;
     }
 
-    .card-social{
-        width: 33%
+    .bottom-banner{
+        max-height: 360px;
     }
 
     .card-sheet{
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
+    }
+
+    .card-social{
+        width: 33%;
+        height: 240px;
     }
 }
 
 @media (min-width: 992px) and (max-width: 1439.8px) {
-
-    /* ############# HEADER AND FOOTER ############# */
-    /* ############# HEADER AND FOOTER ############# */
-    .header-text{
-        display: block;
-    }
-
-    .header-logo{
-        width: 180px;
-        height: 125px;
-    }
-
-    .header-navigation {
-        width: 600px;
-    }
-
-    .botao-cascata {
-        display: none;
-    }
-
-    .list-navigation{
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-        gap: 5px;
-    } 
-
-    .navigation-item{
-        text-align: center;
-        width: 19%;
-        display: inline-block;
-    }
-
-    /* ############# CONTENT SECTION #############  */
-    /* ############# CONTENT SECTION #############  */
-    .banner-content, .main-content{
-        width: 90%;
-        max-width: 1280px;
-    }
-
-    .main-banner{
-        height: 450px;
-    }
-
-    .banner-text-content{
-        padding: 0.5em 0.5em;
-        box-sizing: border-box;
-        width: 50%;
-    }
-
-    /* ############# INSIDE CONTENT ############# */
-    /* ############# INSIDE CONTENT ############# */
-    .top-image-content{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .user-register-buttons{
-        width: 95%;
-    }
-
-    .image-content{
-        display: flex;
-        justify-content: center;
-        width: 50%;
-    }
-
-    .banner-image{
-        max-width: 450px;
-        width: 100%;
-        height: auto;
-    }
-
-    /* ############# CARD CONTENT ############# */
-    /* ############# CARD CONTENT ############# */
     .sheet-title{
         width: 100%;
+        padding: 0.5em 2em;
+        box-sizing: border-box;
     }
 
-    .card-social{
-        width: 33%
+    .bottom-banner{
+        max-height: 360px;
     }
 
     .card-sheet{
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
+    }
+
+    .card-social{
+        width: 33%;
+        height: 240px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1439.8px) {
+    .sheet-title{
+        width: 100%;
+        padding: 0.5em 2em;
+        box-sizing: border-box;
+    }
+
+    .bottom-banner{
+        max-height: 360px;
+    }
+
+    .card-sheet{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card-social{
+        width: 33%;
+        height: 240px;
     }
 }
 
 @media (min-width: 1440px) {
-
-    /* ############# HEADER AND FOOTER ############# */
-    /* ############# HEADER AND FOOTER ############# */
-    .header-text{
-        display: block;
-    }
-
-    /* ############# CONTENT SECTION #############  */
-    /* ############# CONTENT SECTION #############  */
-    .banner-content, .main-content{
-        max-width: 1200px;
-    }
-
-    /* ############# INSIDE CONTENT ############# */
-    /* ############# INSIDE CONTENT ############# */
-    .top-image-content{
-        display: flex;
-        justify-content: center;
-        align-self: center;
-        width: 50%;
-    }
-
-    .image-content{
-        display: flex;
-        justify-content: center;
-        width: 50%;
-    }
-
-    .banner-image{
-        max-width: 450px;
-        height: auto;
-    }
-
-    .banner-text-content{
-        width: 50%;
-    }
-
-    /* ############# CARD CONTENT ############# */
-    /* ############# CARD CONTENT ############# */
     .sheet-title{
         width: 100%;
+        padding: 0.5em 2em;
+        box-sizing: border-box;
     }
 
-    .card-social{
-        width: 33%
+    .main-banner{
+        max-height: 480px;
+    }
+
+    .bottom-banner{
+        max-height: 360px;
     }
 
     .card-sheet{
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
+    }
+
+    .card-social{
+        height: 280px;
+    }
+
+    .card-social{
+        width: 33%;
+        height: 240px;
     }
 }

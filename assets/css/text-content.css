@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    width: 50%;
+    width: 60%;
 }
 
 .button{
@@ -15,10 +15,10 @@
     cursor: pointer;
     transition: 500ms;
     width: 180px;
-}
-
-.button:hover{
-    background: #128799;
+    &:hover{
+        background: #128799;
+        transform: scale(1.1);
+    }
 }
 
 .button-signin{

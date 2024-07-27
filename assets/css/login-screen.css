@@ -28,7 +28,9 @@
 }
 
 @media (min-width: 992px) and (max-width: 1439.8px) {
-
+    .bottom-banner {
+        min-height: 500px;
+    }
 }
 
 @media (min-width: 1440px) {

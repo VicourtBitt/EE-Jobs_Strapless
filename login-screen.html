@@ -86,30 +86,52 @@
                 <div class="main-content">
                     <div class="main-text-content">
                         <h1 class="main-text-title">Já fez o seu cadastro?</h1>
-                        <form class="formulary-box">
-                            <label class="input-label" for="email-login">Email: </label>
-                            <input type="email" class="formulary-input" id="loginEmail" name="email-login" required>
+                        <form class="formulary-box" id="formulary-login">
+                            <div>
+                                <label class="input-label" for="email-login">Email: </label>
+                                <span class="hint-invalid hidden-hint" id="hintPasswordEmail"></span>
+                            </div>
+                            <input type="email" class="formulary-input" id="loginEmail" title="Por favor, insira um email válido" name="email-login" placeholder="Insira seu email..." required>
 
-                            <label class="input-label" for="email-password">Senha: </label>
-                            <input type="password" class="formulary-input" id="loginPassword" name="password-login" required>
+                            <div>
+                                <label class="input-label" for="email-password">Senha: </label>
+                                <span class="hint-invalid hidden-hint" id="hintPasswordLogin"></span>
+                            </div>
+                            <input type="password" class="formulary-input" id="loginPassword" title="Por favor, sua senha" name="password-login" placeholder="Insira sua senha..." required>
 
-                            <button class="button button-signin">Login</button>
+                            <button type="submit" class="button button-signin">Login</button>
                         </form>
                     </div>
 
                     <div class="main-text-content">
                         <h1 class="main-text-title">Quer se cadastrar?</h1>
-                        <form class="formulary-box">
-                            <label class="input-label" for="email-password">Nome: </label>
-                            <input type="password" class="formulary-input" id="signName" name="password-login" required>
+                        <form class="formulary-box" id="formulary-signin">
+                            <div>
+                                <label class="input-label" for="email-password">Nome: </label>
+                                <span class="hint-invalid hidden-hint" id="hintNameSignIn hidden"></span>
+                            </div>
+                            <input type="text" class="formulary-input" id="signName" title="Insira seu primeiro nome" name="password-sign" required>
 
-                            <label class="input-label" for="email-password">Sobrenome: </label>
-                            <input type="password" class="formulary-input" id="signLastname" name="password-login" required>
+                            <div>
+                                <label class="input-label" for="email-password">Sobrenome: </label>
+                                <span class="hint-invalid hidden-hint" id="hintLastNameSignIn"></span>
+                            </div>
+                            <input 
+                                type="text" class="formulary-input" 
+                                id="signLastname" title="Insira seu sobrenome" 
+                                name="password-sign" required
+                            >
+                            <div>
+                                <label class="input-label" for="email-sign">Email: </label>
+                                <span class="hint-invalid hidden-hint" id="hintEmailSign"></span>
+                            </div>
+                            <input 
+                                type="email" class="formulary-input" 
+                                id="signEmail" title="Insira um email para cadastro" 
+                                name="email-sign" required
+                            >
 
-                            <label class="input-label" for="email-login">Email: </label>
-                            <input type="email" class="formulary-input" id="signEmail" name="email-login" required>
-
-                            <button class="button button-signin">Cadastre-se</button>
+                            <button type="submit" class="button button-signin">Cadastre-se</button>
                         </form>
                     </div>
                 </div>
@@ -235,6 +257,6 @@
                 </ul>
             </div>
         </footer>
-
+        <script src="src/app/validation/login-validation.js"></script>
     </body>
 </html>

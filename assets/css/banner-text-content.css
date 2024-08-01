@@ -36,7 +36,6 @@
     color: var(--light);
     display: inline-block;
     border-radius: 5px;
-    border: 1px solid var(--light);
     text-decoration: none;
 }
 

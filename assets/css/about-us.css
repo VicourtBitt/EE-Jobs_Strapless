@@ -1,9 +1,5 @@
 @import url("import.css");
 
-.about-us-content{
-    border: 1px solid yellow;
-}
-
 .founders{
     background: var(--first-color);
     display: block;

@@ -4,14 +4,12 @@
     align-items: center;
     height: 600px;
     background: var(--first-color);
-    border: 1px solid black;
 }
 
 .mid-banner{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
     height: 900px;
 }
 
@@ -19,14 +17,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid blue;
     height: 800px
 }
 
 .main-content, .banner-content{
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid darkgreen;
     width: 80%;
     min-width: 330px;
     height: 95%;
@@ -34,7 +30,6 @@
 }
 
 .top-sneaky-image{
-    border: 1px solid yellow;
     align-items: center;
     justify-content: center;
     transition: 500ms;
@@ -46,7 +41,6 @@
 
 .image-content{
     display: flex;
-    border: 1px solid orange;
     justify-content: center;
     align-items: center;
 }

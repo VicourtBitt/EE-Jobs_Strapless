@@ -20,6 +20,15 @@ function validateElem (elem) {
             fieldNotValid(elem)
         }
     }
+
+    if (elem.id == "signName" || elem.id == "signLastName") {
+        let isNameValid = validateName(elem)
+        if (isNameValid) {
+            fieldIsValid(elem)
+        } else {
+            fieldNotValid(elem)
+        }
+    }
 }
 
 // EVENT LISTENERS TO INPUTS
@@ -64,6 +73,14 @@ function validateEmail (emailValue) {
     return /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g.test(emailValue)
 }
 
+function validateName (elem) {
+    let name = elem.value
+    if (name.length < 2) {
+        return false
+    }
+    return true
+}
+
 // ADD VALIDATION HINT RESULTS
 // ADD VALIDATION HINT RESULTS
 
@@ -90,6 +107,10 @@ function fieldNotValid (elem) {
 function removePrevious (elem) {
     // tbh, i cannot remember what this function has even meant
     // to be one day. If I remember, then I will change this..
+
+    // Oh, i guess this specific function was means to be used
+    // when we gather a specific profile or send this profile info
+    // into another screen. ~00:55
 }
 
 addListener(loginInputs)

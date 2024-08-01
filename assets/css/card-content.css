@@ -119,3 +119,51 @@
 .partner-logo{
     width: 80%;
 }
+
+.card-curriculum {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid red;
+    height: 350px;
+}
+
+.curriculum-image, .curriculum-image > img{
+    width: 185px;
+    height: 135px;
+}
+
+.curriculum-data {
+    border: 1px solid darkgreen;
+    height: 180px;
+    width: 85%
+}
+
+.curriculum-name {
+    border: 1px solid black;
+    text-align: center;
+    height: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    &>h6 {
+        font-size: 24px;
+    }
+}
+
+.each-info{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+    list-style-type: none;
+
+    &>li {
+        line-height: 20px;
+    }
+}
+
+.card-sheet{
+    overflow: hidden auto;
+}

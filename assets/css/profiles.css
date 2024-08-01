@@ -50,11 +50,11 @@
     }
 
     .mid-banner{
-        height: 140px;
+        height: 90px;
     }
 
     .card-sheet{
-        height: 90%;
+        height: 100%;
     }
 
     .bottom-banner > .banner-content{
@@ -73,7 +73,7 @@
     }
 
     .mid-banner{
-        height: 140px;
+        height: 90px;
     }
     
     .bottom-banner{
@@ -85,7 +85,7 @@
     }
 
     .card-sheet{
-        height: 680px;
+        height: 100%;
     }
 
     .main-text-title{
@@ -98,8 +98,12 @@
         height: 360px;
     }
 
+    .mid-banner{
+        max-height: 90px;
+    }
+
     .card-sheet{
-        height: 448px;
+        height: 100%;
     }
 
     .mid-banner > .banner-content{
@@ -114,7 +118,11 @@
     }
 
     .mid-banner{
-        height: 140px;
+        height: 90px;
+    }
+
+    .bottom-banner {
+        max-height: 500px;
     }
 
     .main-text-content{
@@ -123,7 +131,7 @@
     }
 
     .card-sheet{
-        height: 470px;
+        height: 100%;
     }
 
     .top-image{
@@ -139,6 +147,10 @@
 @media (min-width: 1440px) {
     .main-banner{
         height: 360px;
+    }
+
+    .mid-banner {
+        max-height: 90px;
     }
 
     .top-image-content{

@@ -180,36 +180,32 @@
                     <div class="text-content">
                         <h1 class="content-title">Alguma dúvida ou sugestão?</h1>
                         <form class="formulary-box" id="doubtSection">
-                            <input type="text" class="formulary-input" id="company-name" placeholder="Insira o nome da empresa" required>
+                            <input type="text" class="formulary-input"
+                                id="company-name" placeholder="Insira o seu nome"
+                                required
+                            >
                             <!-- <span></span> -->
 
-                            <input type="email" class="formulary-input" id="company-email" placeholder="Insira o email da empresa" required>
+                            <input type="email" class="formulary-input"
+                                id="company-email" placeholder="Insira o seu email"
+                                required
+                            >
                             <!-- <span></span> -->
 
-                            <select class="formulary-input">
-                                <option value="placeholder">Área de atuação</option>
-                                <option>Agronegócios</option>
-                                <option>Alimentícios</option>
-                                <option>Construção e Manutenção</option>
-                                <option>Educação</option>
-                                <option>Entretenimento</option>
-                                <option>Industrial</option>
-                                <option>Informática</option>
-                                <option>Publicidade</option>
-                                <option>Serviços Técnicos</option>
-                                <option>Urbanismo</option>
-                                <option>Vendas e Marketing</option>
-                                <option>Outros</option>
+                            <select id="doubtCategory" class="formulary-input">
+                                <option value="placeholder">Categoria da Dúvida</option>
+                                <option value="cadastroOuLogin">Cadastro/Login do Usuário</option>
+                                <option value="termosServico">Termos de Serviço</option>
+                                <option value="empregabilidade">Parceiros de Empregabilidade</option>
+                                <option value="outros">Outros</option>
                             </select>
                             <!-- <span></span> -->
 
-                            <select class="formulary-input">
-                                <option value="placeholder">Escolha uma opção de parceria</option>
-                                <option>Desejo patrocinar o projeto</option>
-                                <option>Desejo patrocinar um programa do projeto</option>
-                                <option>Desejo patrocinar um candidato em específico</option>
-                                <option>Desejo dar entrada em um programa</option>
-                            </select>
+                            <textarea id="doubtText" class="formulary-input" 
+                                rows="4" placeholder="Escreva sobre sua dúvida"
+                                minlength="30" maxlength="250"
+                                class="text-area-form" required
+                            ></textarea>
                             <!-- <span></span> -->
 
                             <button class="button button-about">Enviar</button>
@@ -272,6 +268,6 @@
                 </ul>
             </div>
         </footer>
-        <script src="src/app/validation/login-validation.js"></script>
+        <script type="module" src="src/app/validation/login-validation.js"></script>
     </body>
 </html>

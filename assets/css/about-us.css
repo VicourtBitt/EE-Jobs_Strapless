@@ -54,6 +54,10 @@
     .bottom-banner{
         height: 1540px
     }
+
+    .card-founder{
+        width: 100%;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767.8px) {
@@ -91,6 +95,10 @@
 
     .bottom-banner{
         height: 1540px;
+    }
+
+    .card-founder{
+        width: 100%;
     }
 }
 

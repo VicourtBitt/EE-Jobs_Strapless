@@ -1,0 +1,410 @@
+@import url("header.css");
+@import url("header-navigation.css");
+@import url("footer.css");
+@import url("main-content.css");
+@import url("banner-text-content.css");
+@import url("sneaky-content.css");
+@import url("image-content.css");
+@import url("text-content.css");
+@import url("contact-us.css");
+@import url("card-content.css");
+@import url("forms.css");
+
+:root{
+    --first-color: #6C757D;
+    --second-color: #343a40;
+    --auxiliar: #17a2b8;
+    --auxiliar-secondary: #FFC107;
+    --button-color: #007bff;
+    --light: #FFFFFF;
+    --dark: #000000;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-indent: 0px;
+}
+
+body{
+    min-width: 365px;
+}
+
+textarea {
+    resize: none;
+    line-height: 24px;
+    height: 60px;
+    overflow-y: auto;
+}
+
+
+@media (max-width: 575.8px) {
+
+    /* ############# HEADER AND FOOTER ############# */
+    /* ############# HEADER AND FOOTER ############# */
+    footer {
+        height: 160px;
+    }
+
+    /* ############# CONTENT SECTION #############  */
+    /* ############# CONTENT SECTION #############  */
+
+    /* ############# INSIDE CONTENT ############# */
+    /* ############# INSIDE CONTENT ############# */
+    .image-content{
+        display: flex;
+        width: 100%;
+        height: 40%;
+    }
+
+    .text-content{
+        width: 100%;
+        height: 60%;
+    }
+
+    .checkbox-cascata:checked~.list-navigation {
+        list-style-type: none;
+        text-align: center;
+        position: relative;
+        left: -80px;
+        width: 160px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+        gap: 5px
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.8px) {
+
+    /* ############# HEADER AND FOOTER ############# */
+    /* ############# HEADER AND FOOTER ############# */
+    .header-logo{
+        width: 160px;
+        height: 110px;
+    }
+
+    /* ############# CONTENT SECTION #############  */
+    /* ############# CONTENT SECTION #############  */
+    .main-banner{
+        height: 600px;
+    }
+
+    .mid-banner{
+        height: 800px;
+    }
+
+    .main-content{
+        height: 540px;
+    }
+
+    .banner-content, .main-content{
+        width: 75%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .bottom-banner{
+        height: 760px;
+    }
+
+    /* ############# INSIDE CONTENT ############# */
+    /* ############# INSIDE CONTENT ############# */
+
+    .banner-image{
+        height: auto;
+    }
+
+    .image-content{
+        width: 100%;
+        height: 39.5%;
+    }
+
+    .text-content{
+        width: 100%;
+        height: 60%;
+        justify-content: space-around;
+    }
+
+    .main-text-content, .content-text{
+        padding: 0.5em 2em;
+    }
+
+    .content-title{
+        text-align: center;
+    }
+
+    .checkbox-cascata:checked~.list-navigation {
+        list-style-type: none;
+        text-align: center;
+        position: relative;
+        left: -80px;
+        width: 160px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+        gap: 5px
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.8px) {
+
+    /* ############# HEADER AND FOOTER ############# */
+    /* ############# HEADER AND FOOTER ############# */
+    .list-navigation{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 5px;
+    } 
+
+    .header-navigation {
+        width: 520px;
+    }
+
+    .botao-cascata {
+        display: none;
+    }
+
+    .navigation-item{
+        text-align: center;
+        width: 19%;
+        display: inline-block;
+    }
+
+    .logo-text-box{
+        width: 220px;
+    }
+
+    .header-text{
+        display: block;
+    }
+
+    /* ############# CONTENT SECTION #############  */
+    /* ############# CONTENT SECTION #############  */
+    .banner-content , .main-content{
+        width: 80%;
+    }
+
+    .banner-content{
+        flex-direction: row;
+    }
+
+    .main-banner{
+        height: 380px;
+    }
+
+    .mid-banner{
+        height: 560px !important;
+    }
+
+    .bottom-banner{
+        max-height: 480px;
+    }
+    
+    /* ############# INSIDE CONTENT ############# */
+    /* ############# INSIDE CONTENT ############# */
+    .main-text-parag, .main-text-title{
+        width: 75%;
+    }
+
+    .image-content{
+        display: flex;
+        justify-content: center;
+        width: 49.5%;
+    }
+
+    .text-content{
+        width: 49.5%;
+    }
+
+    .banner-image{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1439.8px) {
+
+    /* ############# HEADER AND FOOTER ############# */
+    /* ############# HEADER AND FOOTER ############# */
+    .header-text{
+        display: block;
+    }
+
+    .header-logo{
+        width: 180px;
+        height: 125px;
+    }
+
+    .header-navigation {
+        width: 600px;
+    }
+
+    .botao-cascata {
+        display: none;
+    }
+
+    .list-navigation{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 5px;
+    } 
+
+    .navigation-item{
+        text-align: center;
+        width: 19%;
+        display: inline-block;
+    }
+
+    /* ############# CONTENT SECTION #############  */
+    /* ############# CONTENT SECTION #############  */
+    .banner-content{
+        flex-direction: row;
+    }
+
+    .banner-content, .main-content{
+        width: 90%;
+        max-width: 1280px;
+    }
+
+    .bottom-banner{
+        max-height: 390px;
+    }
+
+    .mid-banner{
+        max-height: 580px;
+    }
+
+    .main-banner{
+        height: 490px;
+    }
+
+    /* ############# INSIDE CONTENT ############# */
+    /* ############# INSIDE CONTENT ############# */
+    .main-text-content{
+        padding: 0.5em 0.5em;
+        box-sizing: border-box;
+        width: 50%;
+    }
+
+    .top-image-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .user-register-buttons{
+        width: 95%;
+    }
+
+    .image-content{
+        display: flex;
+        justify-content: center;
+        width: 40%;
+    }
+
+    .text-content{
+        width: 59%;
+    }
+
+    .banner-image{
+        max-width: 450px;
+        width: 100%;
+        height: auto;
+    }
+
+    .top-sneaky-image{
+        max-width: 450px;
+        height: auto;
+    }
+}
+
+@media (min-width: 1440px) {
+
+    /* ############# HEADER AND FOOTER ############# */
+    /* ############# HEADER AND FOOTER ############# */
+    .footer{
+        display: flex;
+        justify-content: center;
+    }
+
+    .links-section, .socials-section{
+        width: 30%;
+    }
+
+    .header-text{
+        display: block;
+    }
+
+    /* ############# CONTENT SECTION #############  */
+    /* ############# CONTENT SECTION #############  */
+    .banner-content, .main-content{
+        max-width: 1200px;
+    }
+
+    .banner-content{
+        flex-direction: row;
+    }
+
+    .mid-banner{
+        max-height: 480px;
+    }
+
+    .bottom-banner{
+        max-height: 440px;
+    }
+
+    /* ############# INSIDE CONTENT ############# */
+    /* ############# INSIDE CONTENT ############# */
+
+    .top-image-content{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        width: 50%;
+    }
+
+    .image-content{
+        display: flex;
+        justify-content: center;
+        width: 40%;
+    }
+
+    .text-content{
+        width: 59.5%;
+        padding: 0.5em 3em;
+        box-sizing: border-box;
+    }
+
+    .banner-image{
+        max-width: 450px;
+        height: auto;
+        transition: 500ms;
+    }
+
+    .main-text-content{
+        width: 50%;
+        padding: 0.5em 2em;
+        box-sizing: border-box;
+    }
+
+    .botao-cascata{
+        display: none;
+    }
+
+    .header-navigation{
+        width: 600px
+    }
+
+    .list-navigation{
+        list-style-type: none;
+        width: 600px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+    } 
+}

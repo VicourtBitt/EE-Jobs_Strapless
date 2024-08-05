@@ -1,0 +1,44 @@
+header {
+    display: flex;
+    height: 120px;
+    align-items: center;
+    justify-content: space-around;
+    background: var(--first-color);
+}
+
+.header-logo{
+    width: 140px;
+    height: 95px;
+    transition: 500ms;
+
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+.logo-text-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 130px;
+    text-align: center;
+}
+
+.header-text{
+    display: none;
+}
+
+.logo-title{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 36px;
+}
+
+.header-navigation{
+    line-height: 60px;
+    height: 60px;
+    width: 470px;
+}
+
+.logo-image{
+    height: 100%;
+}

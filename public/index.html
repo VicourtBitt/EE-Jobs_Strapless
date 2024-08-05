@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- FontAwesome Icons -->
+        <script src="https://kit.fontawesome.com/b493036c5c.js" crossorigin="anonymous"></script>
+        
+        <!-- Navigation Bar Icon -->
+        <link rel="icon" type="favicon/text" href="./assets/icon/favicon.ico">
+
+        <!-- Specific Media Query -->
+        <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+        
+        <title>EE-Jobs — Início</title>
+    </head>
+
+    <body>
+        <!-- 
+            Dando um pequeno resumo dessa reconstrução do HTML:
+            Para os curiosos, a primeira versão havia sido feita utilizando bootstrap, que para quem não sabe, é um framework
+            para desenvolvimento web mais fácil e ágil, focando em clases pré-definidas e componentes pré-estilizados, o que já
+            alivia a vida do desenvolvedor. Porém, existem algumas limitações ao usar Bootstrap, literalmente quando você não 
+            está acostumado a utilizar ele tanto, você acaba perdendo a prática com ele e preferindo reutilizar o bom e velho HTML
+            CSS padrão.
+
+            Ainda iremos seguir uma estruturação MUITO semelhante, com as limitações de design que eu (Victor) como desenvolvedor
+            back-end sofro para criar designs interessantes.
+
+            Ass: Victor Bittencourt
+        -->
+        <header>
+
+            <!-- E&E-Jobs Logo || Logo da E&E-Jobs -->
+            <div class="logo-text-box">
+                <a href="index.html">
+                    <div class="header-logo">
+                        <img class="logo-image" src="assets/images/logo_ee_oldcane.png" alt="Logo da E&E-Jobs: Senhor de Idade com Muleta">
+                    </div>
+                </a>
+
+                <div class="header-text">
+                    <h3 class="logo-title">Jobs</h3>
+                </div>
+            </div>
+
+            <!-- Navigation Bar || Barra de Navegação -->
+            <!-- Only Visible 756px + || Somente visível acima de 756px -->
+            <nav class="header-navigation">
+
+                <!-- Invisible Checkbox Button || Botão de Check Invisível -->
+                <!-- Opens the "hamburguer" navigation || Abre a navegação hamburguer -->
+                <input type="checkbox" class="checkbox-cascata" id="check-cascata">
+                <label for="check-cascata">
+                    <span class="botao-cascata">
+                        <i class="fa-solid fa-bars"></i>
+                    </span>
+                </label>
+
+                <ul class="list-navigation">
+                    <li class="navigation-item">
+                        <a href="index.html" class="navigation-link">HOME</a>
+                    </li>
+
+                    <li class="navigation-item">
+                        <a href="contact-us.html" class="navigation-link">CONTATO</a>
+                    </li>
+
+                    <li class="navigation-item">
+                        <a href="profiles.html" class="navigation-link">PERFIS</a>
+                    </li>
+
+                    <li class="navigation-item">
+                        <a href="our-partners.html" class="navigation-link">PARCERIAS</a>
+                    </li>
+
+                    <li class="navigation-item">
+                        <a href="about-us.html" class="navigation-link">SOBRE</a>
+                    </li>
+
+                    <li class="navigation-item botao-login">
+                        <a href="login-screen.html" class="navigation-link navigation-link__login">Entrar</a>
+                    </li>
+                </ul>
+
+            </nav>
+        </header>
+
+        <main>
+            <!-- Banner que completa a parte superior do design -->
+            <section class="main-banner">
+                <div class="main-content">
+                    <div class="main-text-content">
+                        <h1 class="main-text-title">Suas experiências valorizadas</h1>
+                        <p class="main-text-parag">
+                            Ferramenta de realocação dos mais experiêntes do mercado. Aqui, valorizamos seus
+                            conhecimentos acima de tudo! Volte ao ápice, venha com e.e-jobs! Entre em contato abaixo.
+                        </p>
+
+                        <div class="user-register-buttons">
+                            <button id="btnSignin" class="button button-signin">Cadastre-se hoje!</button>
+                            <button id="btnLogin" class="button button-login">Já possuo cadastro</button>
+                        </div>
+
+                        <span class="availability-text">
+                            Disponível para
+                            <a href="" class="mobile-availability" disabled>
+                                <i class="fa-brands fa-android"></i>
+                            </a>
+
+                            <a href="" class="mobile-availability" disabled>
+                                <i class="fa-brands fa-apple"></i>
+                            </a>
+                        </span>
+                    </div>
+
+                    <div class="top-image-content">
+                        <img class="top-sneaky-image" src="assets/images/obj_elderly_man.webp" alt="Idoso sentado mexendo em um computador">
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="mid-banner">
+                <div class="banner-content">
+                    <div class="image-content">
+                        <img class="banner-image" src="assets/images/obj_curriculum.png" alt="Desenho de um currículo">
+                    </div>
+
+                    <div class="text-content">
+                        <h1 class="content-title">Mostre as suas capacitações</h1>
+                        <p class="content-text">
+                            Envie o seu currículo para as diversas empresas parceiras 
+                            do nosso programa. Ás vezes, o que elas mais precisam é de
+                            alguém com bastante experiência!
+                        </p>
+                        <a href="/profiles.html" class="button button-about">Saiba mais</a>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="bottom-banner">
+                <div class="banner-content">
+                    <div class="text-content">
+                        <h1 class="content-title">Obtenha suporte</h1>
+                        <p class="content-text">
+                            Aqui, nosso programa tem um atendimento especializado direcionado 
+                            para você, assim como as nossas empresas parceiras. Estamos de braços
+                            abertos para dar todo suporte necessário para você.
+                        </p>
+                        <a href="/login-screen.html#doubtSection" class="button button-about">Saiba mais</a>
+                    </div>
+
+                    <div class="image-content">
+                        <img class="banner-image" src="assets/images/obj_support_talk.png" alt="Desenho de um currículo">
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <div class="links-section">
+                <ul class="footer-list">
+                    <li class="footer-item">
+                        <a href="index.html" class="footer-link">Home</a>
+                    </li>
+
+                    <li class="footer-item">
+                        <a href="contact-us.html" class="footer-link">Contato</a>
+                    </li>
+
+                    <li class="footer-item">
+                        <a href="profiles.html" class="footer-link">Perfis</a>
+                    </li>
+
+                    <li class="footer-item">
+                        <a href="our-partners.html" class="footer-link">Parcerias</a>
+                    </li>
+
+                    <li class="footer-item">
+                        <a href="about-us.html" class="footer-link">Sobre</a>
+                    </li>
+
+                    <li class="footer-item">
+                        <a href="#" class="footer-link">Dúvidas</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="social-section">
+                <ul class="footer-list">
+                    <li class="footer-item footer-item__social">
+                        <a href="new" class="footer-link"><i class="fa-brands fa-square-facebook"></i></a>
+                    </li>
+
+                    <li class="footer-item footer-item__social">
+                        <a href="new" class="footer-link"><i class="fa-brands fa-square-instagram"></i></a>
+                    </li>
+
+                    <li class="footer-item footer-item__social">
+                        <a href="new" class="footer-link"><i class="fa-brands fa-linkedin"></i></a>
+                    </li>
+
+                    <li class="footer-item footer-item__social">
+                        <a href="new" class="footer-link"><i class="fa-solid fa-inbox"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
+        <script type="module" src="./interactions/indexInteractions.js"></script>
+    </body>
+</html>

@@ -1,0 +1,178 @@
+.sheet-title{
+    font-size: 34px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-weight: 200;
+    padding: 0.5em;
+}
+
+.card-social{
+    height: 210px;
+    border-radius: 10px;
+    display: flex;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: 500ms;
+
+    &:hover{
+        background: #c6c6d6;
+    }
+}
+
+.card-sheet{
+    width: 100%;
+}
+
+.card-founder{
+    height: 360px;
+    border: 1px solid #d3d3d6;
+    border-radius: 10px;
+}
+
+.card-founder-list{
+    list-style-type: none;
+    text-align: center;
+}
+
+.card-founder-list > li {
+    line-height: 24px;
+}
+
+.card-founder-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+}
+
+.card-founder-text{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-founder-links{
+    display: flex;
+    justify-content: space-around;
+    font-size: 32px;
+    padding: 0.25em;
+}
+
+.founder-photo{
+    border-radius: 10px;
+    height: 160px;
+}
+
+.founder-name{
+    padding: 0.25em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 18px;
+    width: 100%;
+}
+
+.card-icon{
+    font-size: 100px;
+    transition: 500ms;
+    &:hover{
+        transform: scale(1.1)
+    }
+}
+
+.card-clickable{
+    text-decoration: none;
+    width: 100%;
+}
+
+.card-social-title{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 200;
+    font-size: 28px;
+}
+
+.card-social-text{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 200px;
+    font-size: 18px;
+}
+
+.card-partner{
+    width: 33%;
+    border: 1px solid black;
+    height: 33%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 500ms;
+    &:hover{
+        background: #d1d2d3;
+        transform: scale(1.1);
+    }
+}
+
+.partner-logo{
+    width: 80%;
+}
+
+.card-curriculum {
+    border: 1px solid var(--first-color);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 350px;
+    transition: 500ms;
+
+    &:hover{
+        background: #d1d2d3;
+        transform: scale(1.05)
+    }
+}
+
+.curriculum-image, .curriculum-image > img{
+    width: 185px;
+    height: 135px;
+}
+
+.curriculum-data {
+    height: 180px;
+    width: 85%
+}
+
+.curriculum-name {
+    text-align: center;
+    height: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    &>h6 {
+        font-size: 24px;
+    }
+}
+
+.each-info{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+    list-style-type: none;
+
+    &>li {
+        line-height: 20px;
+    }
+}
+
+.card-sheet{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,63 @@
+.header-navigation{
+    width: 80px;
+    transition: 500ms;
+}
+
+.list-navigation{
+    display: none;
+}
+
+.botao-cascata{
+    border: 1px solid black;
+    display: block;
+    transition: 1000ms;
+    font-size: 34px;
+    text-align: center;
+    background: none;
+    border-radius: 15px;
+    width: 80px;
+    height: 60px;
+}
+
+.navigation-item, .navigation-link {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.checkbox-cascata{
+    display: none;
+}
+
+.navigation-link{
+    background: var(--first-color);
+    border: 1px solid black;
+    text-decoration: none;
+    color: #343A40;
+    font-weight: 600;
+    display: block;
+    transition: 500ms;
+    border-radius: 15px;
+}
+
+.navigation-link:hover{
+    background: #CCC;
+}
+
+.navigation-link__login{
+    color: var(--light);
+    background: #343A40;
+}
+
+.navigation-link__login:hover{
+    background-color: #222324 !important;
+}
+
+.navigation-link:hover{
+    color: black
+}
+   
+.botao-cascata:hover{
+    background-color: #CCC;
+}

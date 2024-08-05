@@ -1,0 +1,214 @@
+@import url("import.css");
+
+/* 
+
+ESSE ARQUIVO É RESPONSÁVEL PELAS MEDIA QUERIES DA TELA DE "SOBRE"
+POSSUI ELEMENTOS GLOBAIS ASSIM COMO AS OUTRAS PÁGINAS, MAS TAMBÉM
+POSSUI SEU ELEMENTOS INDEPENDENTES.
+AS MEDIA QUERIES SÃO SEPARADAS POR 3 ESPAÇOS
+
+HEADER/FOOTER = Todo componente de estilização dos cabeçalhos ou
+rodapés que vai sofrer alteração
+
+CONTENT SECTION = Todo conteúdo dentro das seguintes classes globais
+main-banner, mid-banner, bottom-banner e banner-content
+
+INSIDE CONTENT = Todo conteudo independente dentro do banner-content
+no HTML. ALTERAR TAGS DE NOME ULTRA GENERICO
+
+*/
+
+@media (max-width: 575.8px) {
+    .main-banner{
+        max-height: 480px;
+    }
+
+    .main-text-content{
+        padding: 0.5em 2em;
+        box-sizing: border-box;
+    }
+
+    .mid-banner{
+        height: 1640px;
+    }
+
+    .bottom-banner{
+        max-height: 260px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .content-text{
+        padding: 0.5em 2em;
+        box-sizing: border-box;
+    }
+
+    .card-sheet{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card-partner{
+        width: 100%;
+        height: calc(100%/9)
+    }
+
+    .partner-logo{
+        width: 50%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.8px) {
+    .main-content{
+        max-height: 440px;
+    }
+
+    .main-banner{
+        max-height: 480px;
+    }
+
+    .mid-banner{
+        height: 1640px;
+    }
+
+    .bottom-banner{
+        max-height: 260px;
+        text-align: center;
+    }
+
+    .content-text{
+        padding: 0.5em 2em;
+        box-sizing: border-box;
+    }
+
+    .card-sheet{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card-partner{
+        width: 100%;
+        height: calc(100%/9)
+    }
+
+    .partner-logo{
+        width: 50%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.8px) {
+    .bottom-banner{
+        max-height: 160px;
+        text-align: center;
+    }
+
+    .banner-text-content{
+        padding: 0.5em 2em;
+        box-sizing: border-box;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1439.8px) {
+    .main-banner{
+        height: 460px
+    }
+
+    .main-content{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .main-text-content{
+        width: 80%;
+    }
+
+    .main-text-parag{
+        text-align: center;
+    }
+
+    .top-image{
+        width: 350px;
+    }
+
+    .bottom-banner{
+        display: flex;
+        height: 180px;
+        padding: 0.5em 3em;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .bottom-banner > .banner-content{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .content-text{
+        text-align: center;
+    }
+    
+    .card-sheet{
+        max-width: 1080px;
+        margin: 0px auto;
+    }
+}
+
+@media (min-width: 1440px) {
+    .main-banner{
+        height: 460px
+    }
+
+    .main-content{
+        max-width: 1080px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .main-text-content{
+        width: 80%;
+    }
+
+    .main-text-parag{
+        text-align: center;
+    }
+
+    .top-image{
+        width: 350px;
+    }
+
+    .banner-content{
+        max-width: 1080px;
+    }
+
+    .mid-banner{
+        max-height: 900px;
+    }
+
+    .bottom-banner{
+        display: flex;
+        height: 180px;
+        padding: 0.5em 3em;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .bottom-banner > .banner-content{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .content-text{
+        text-align: center;
+    }
+    
+    .card-sheet{
+        max-width: 1080px;
+        margin: 0px auto;
+    }
+}

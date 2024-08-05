@@ -1,0 +1,57 @@
+.formulary-box{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+.formulary-input{
+    width: 100%;
+    height: 38px;
+    border-radius: 10px;
+    background: var(--light);
+    text-indent: 10px;
+    transition: 500ms;
+}
+
+.formulary-line{
+    width: 100%;
+}
+
+.input-label{
+    display: inline-block;
+    width: 90px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.input-valid{
+    color: darkgreen;
+    background: rgb(120, 255, 120);
+}
+
+.hidden-hint{
+    display: none;
+}
+
+.hint-invalid{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: darkred;
+    float: right;
+    font-weight: 600;
+}
+
+.input-invalid {
+    border: 2px solid red;
+    background: rgb(250, 191, 191);
+
+    &::placeholder {
+        color: darkred
+    }
+}
+
+.form-advice {
+    border: 1px solid red;
+    font-size: 18px;
+    height: 18px;
+}

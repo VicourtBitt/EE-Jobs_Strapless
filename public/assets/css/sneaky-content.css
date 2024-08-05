@@ -1,0 +1,16 @@
+.top-image-content{
+    display: none;
+    width: 50%;
+}
+
+.top-sneaky-image{
+    height: 360px;
+}
+
+.top-image{
+    width: 50%;
+    transition: 500ms;
+    &:hover{
+        transform: scale(1.1);
+    }
+}

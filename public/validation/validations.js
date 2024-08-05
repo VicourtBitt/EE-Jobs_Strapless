@@ -51,21 +51,21 @@ export function fieldIsNotValid (elem, hint= false) {
 // TEST ELEMENT VALIDATION
 export function validateElem (elem) {
     // This function is called whenever it should validate a element
-    if (elem.id == "loginEmail" || elem.id == "signEmail") {
+    if (elem.id == "loginEmail" || elem.id == "signEmail" || elem.id == "companyEmail") {
         let isEmailValid = validateEmail(elem.value)
         if (isEmailValid) {
-            fieldIsValid(elem, true)
+            fieldIsValid(elem)
         } else {
-            fieldIsNotValid(elem, true)
+            fieldIsNotValid(elem)
         }
     }
 
     if (elem.id == "signName" || elem.id == "signLastName") {
         let isNameValid = validateName(elem, 2)
         if (isNameValid) {
-            fieldIsValid(elem, true)
+            fieldIsValid(elem)
         } else {
-            fieldIsNotValid(elem, true)
+            fieldIsNotValid(elem)
         }
     }
 

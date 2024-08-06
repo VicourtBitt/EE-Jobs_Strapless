@@ -1,8 +1,8 @@
 @import url("import.css");
 
 .card-sheet {
-    overflow: hidden !important;
-    border-bottom: none !important;
+    overflow: auto;
+    border-bottom: none ;
 }
 
 @media (max-width: 575.8px) {

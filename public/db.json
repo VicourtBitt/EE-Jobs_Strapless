@@ -1,0 +1,49 @@
+{
+    "resumes": [
+        {
+            "name": "Victor Bittencourt",
+            "age": 20,
+            "naturality": "SP",
+            "generalRole": "Software Developer",
+            "skills": [
+                "Python", "JavaScript", "C++"
+            ]
+        },
+        {
+            "name": "Steffany Sympson",
+            "age": 35,
+            "naturality": "RJ",
+            "generalRole": "Software Developer",
+            "skills": [
+                "React", "React.js", "Vite (React)"
+            ]
+        },
+        {
+            "name": "Mônica Alves",
+            "age": 40,
+            "naturality": "SP",
+            "generalRole": "Software Developer",
+            "skills": [
+                "Compras", "JavaScript", "Web Development"
+            ]
+        },
+        {
+            "name": "João Bittencourt",
+            "age": 21,
+            "naturality": "SP",
+            "generalRole": "Administrative Assistant",
+            "skills": [
+                "Python", "Selenium", "Cypress"
+            ]
+        },
+        {
+            "name": "Joel Bittencourt",
+            "age": 72,
+            "naturality": "RS",
+            "generalRole": "Security Supervisor",
+            "skills": [
+                "Supervisão", "SAP", "OS"
+            ]
+        }
+    ]
+}

@@ -174,6 +174,10 @@
         max-height: 90px;
     }
 
+    .bottom-banner {
+        height: 800px;
+    }
+
     .top-image-content{
         width: 40%;
     }
@@ -185,6 +189,10 @@
     .top-image{
         height: 325px;
         width: auto;
+    }
+
+    .card-sheet {
+        height: 100%;
     }
 
     .card-curriculum{

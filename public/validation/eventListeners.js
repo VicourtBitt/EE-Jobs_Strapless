@@ -38,13 +38,13 @@ function intoLocalStorage (elem, formInputs) {
             "lastName" : formInputs[1].value,
             "email" : formInputs[2].value
         }
-        localStorage.setItem("registerInfo", JSON.stringify(values))
+        sessionStorage.setItem("registerInfo", JSON.stringify(values))
     }
     if (elem.id == "formulary-login") {
         let values = {
             "email" : formInputs[0].value,
             "password" : formInputs[1].value,
         }
-        localStorage.setItem("loginInfo", JSON.stringify(values))
+        sessionStorage.setItem("loginInfo", JSON.stringify(values))
     }
 }

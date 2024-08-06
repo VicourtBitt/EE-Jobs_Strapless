@@ -1,5 +1,9 @@
 @import url("import.css");
 
+.card-sheet {
+    gap: 0px;
+}
+
 .founders{
     background: var(--first-color);
     display: block;

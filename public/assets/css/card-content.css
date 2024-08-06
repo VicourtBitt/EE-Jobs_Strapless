@@ -177,4 +177,8 @@
     justify-content:start;
     align-items: center;
     flex-wrap: wrap;
+    padding: 10px 0px;
+    box-sizing: border-box;
+    gap: 10px;
+    border-bottom: 1px solid var(--dark);
 }

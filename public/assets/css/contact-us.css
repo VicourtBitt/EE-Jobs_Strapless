@@ -1,5 +1,10 @@
 @import url("import.css");
 
+.card-sheet {
+    overflow: hidden !important;
+    border-bottom: none !important;
+}
+
 @media (max-width: 575.8px) {
     .bottom-banner{
         height: 1020px;
@@ -38,7 +43,7 @@
     }
 
     .card-social{
-        width: 33%;
+        width: 31%;
         height: 240px;
     }
 }
@@ -60,7 +65,7 @@
     }
 
     .card-social{
-        width: 33%;
+        width: 32%;
         height: 240px;
     }
 }
@@ -82,7 +87,7 @@
     }
 
     .card-social{
-        width: 33%;
+        width: 32%;
         height: 240px;
     }
 }
@@ -112,7 +117,7 @@
     }
 
     .card-social{
-        width: 33%;
+        width: 32%;
         height: 240px;
     }
 }

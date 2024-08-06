@@ -18,6 +18,11 @@ no HTML. ALTERAR TAGS DE NOME ULTRA GENERICO
 
 */
 
+.card-sheet {
+    gap: 0px;
+    overflow: visible;
+}
+
 @media (max-width: 575.8px) {
     .main-banner{
         max-height: 480px;

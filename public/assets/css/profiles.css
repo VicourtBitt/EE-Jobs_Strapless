@@ -92,7 +92,7 @@
     }
 
     .card-curriculum {
-        width: 49.5%;
+        width: 48%;
     }
     
     .curriculum-data {
@@ -124,7 +124,7 @@
     }
 
     .card-curriculum {
-        width: 49.5%;
+        width: 48%;
     }
 
 }
@@ -161,7 +161,7 @@
     }
 
     .card-curriculum {
-        width: 33%;
+        width: 32%;
     }
 }
 
@@ -175,7 +175,7 @@
     }
 
     .bottom-banner {
-        height: 800px;
+        min-height: 620px;
     }
 
     .top-image-content{
@@ -192,10 +192,14 @@
     }
 
     .card-sheet {
-        height: 100%;
+        padding: 10px 0px;
+        box-sizing: border-box;
+        gap: 10px;
+        height: 600px;
+        border-bottom: 1px solid var(--dark);
     }
 
     .card-curriculum{
-        width: 24.5%;
+        width: 24%;
     }
 }

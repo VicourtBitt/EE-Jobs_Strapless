@@ -21,19 +21,30 @@ export function addListener (list, type) {
 // EVENT LISTENERS TO FORMULARIES
 // EVENT LISTENERS TO FORMULARIES
 
-export function formListener (elem) {
+export function formListener (elem, formInputs) {
     // This is the event specific event listener for the formulary
     // Basically we are only gathering the values to see if the code
     // is actuaçy working as intended
     elem.addEventListener("submit", (e) => {
         e.preventDefault()
-        if (elem.id == "formulary-signin") {
-            let values = {
-                "name" : signInputs[0].value,
-                "lastName" : signInputs[1].value,
-                "email" : signInputs[2].value
-            }
-            localStorage.setItem("registerInfo", JSON.stringify(values))
-        }
+        intoLocalStorage(elem, formInputs)
     })
+}
+
+function intoLocalStorage (elem, formInputs) {
+    if (elem.id == "formulary-signin") {
+        let values = {
+            "name" : formInputs[0].value,
+            "lastName" : formInputs[1].value,
+            "email" : formInputs[2].value
+        }
+        localStorage.setItem("registerInfo", JSON.stringify(values))
+    }
+    if (elem.id == "formulary-login") {
+        let values = {
+            "email" : formInputs[0].value,
+            "password" : formInputs[1].value,
+        }
+        localStorage.setItem("loginInfo", JSON.stringify(values))
+    }
 }

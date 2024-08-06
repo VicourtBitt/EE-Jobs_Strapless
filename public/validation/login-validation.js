@@ -7,5 +7,5 @@ document.addEventListener("DOMContentLoaded", () => {
     const invalidHints = document.querySelectorAll(".hint-invalid")
 
     addListener(loginInputs, "keydown")
-    formListener(formLogin)
+    formListener(formLogin, loginInputs)
 })

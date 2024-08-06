@@ -88,15 +88,33 @@ export function validateElem (elem) {
     }
 }
 
-// Hello Teacher Steffany, I'm only writing this in english because it
-// seems better (in my opinion at least), and because it seems right when
-// we talk about documentation (even if my code seems worse than the "Tiête")
+// SELECT/INPUT EVENT LISTENER 
+export function addListener (list, type) {
+    // This function adds a event listener to every element we pass
+    // in the function call, so we can pass a list of elems
+    list.forEach((elem) => {
+        elem.addEventListener(type, () => {
+            validateElem(elem)
+        })
+    })
+}
 
-function removePrevious (elem) {
-    // tbh, i cannot remember what this function has even meant
-    // to be one day. If I remember, then I will change this..
-    
-    // Oh, i guess this specific function was means to be used
-    // when we gather a specific profile or send this profile info
-    // into another screen. ~00:55
+// EVENT LISTENERS TO FORMULARIES
+// EVENT LISTENERS TO FORMULARIES
+
+export function formListener (elem) {
+    // This is the event specific event listener for the formulary
+    // Basically we are only gathering the values to see if the code
+    // is actuaçy working as intended
+    elem.addEventListener("submit", (e) => {
+        e.preventDefault()
+        if (elem.id == "formulary-signin") {
+            let values = {
+                "name" : signInputs[0].value,
+                "lastName" : signInputs[1].value,
+                "email" : signInputs[2].value
+            }
+            localStorage.setItem("registerInfo", JSON.stringify(values))
+        }
+    })
 }

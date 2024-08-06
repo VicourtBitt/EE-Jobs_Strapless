@@ -2,6 +2,7 @@
 
 .card-sheet {
     gap: 0px;
+    overflow: hidden;
 }
 
 .founders{

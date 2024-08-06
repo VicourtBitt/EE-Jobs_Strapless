@@ -10,6 +10,12 @@ export function addListener (list, type) {
             validateElem(elem)
         })
     })
+
+    list.forEach((elem) => {
+        elem.addEventListener("blur", () => {
+            validateElem(elem)
+        })
+    })
 }
 
 // EVENT LISTENERS TO FORMULARIES

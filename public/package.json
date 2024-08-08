@@ -1,0 +1,19 @@
+{
+  "name": "ee-jobs-nb",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type":"module",
+  "scripts": {
+    "start": "nodemon public/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.19.2",
+    "json-server": "^1.0.0-beta.1",
+    "nodemon": "^3.1.4"
+  }
+}

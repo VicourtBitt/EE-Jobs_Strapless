@@ -21,7 +21,7 @@ const getUser = async (req, res) => {
 const getAllUser = async (req, res) => {
     try {
         const userInfos = await userService.getAllUser()
-        req.status(200).json(userInfos)
+        res.status(200).json(userInfos)
     } catch (error) {
         res.status(400).json({ error: error.message })
     }

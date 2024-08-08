@@ -17,6 +17,6 @@ module.exports = appDB => {
         users,
         companies,
         jobExperiences,
-        skills
+        skills,
     )
 }

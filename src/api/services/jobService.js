@@ -25,10 +25,23 @@ const updateJobExperience = async (id, data) => {
     jobInfo.update(data)
     return jobInfo
 }
+
+const deleteJobExperience = async (id) => {
+    try {
+        const jobToDelete = await JobExperience.findByPk(id)
+        if (!jobToDelete) {
+            throw new Error("Experiencia de trabalho não existente")
+        }
+        await jobToDelete.destroy()
+    } catch (error) {
+        throw error
+    }
+}
  
 module.exports = {
     createJobExperience,
     getJobExperience,
     getAllJobExperiences,
-    updateJobExperience
+    updateJobExperience,
+    deleteJobExperience
 }

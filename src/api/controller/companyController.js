@@ -21,7 +21,7 @@ const getCompany = async (req, res) => {
 const getAllCompanies = async (req, res) => {
     try {
         const companyInfo = await companyService.getAllCompanies()
-        req.status(200).json(companyInfo)
+        res.status(200).json(companyInfo)
     } catch (error) {
         res.status(400).json({ error: error.message })
     }

@@ -60,7 +60,7 @@ export function validateElem (elem) {
         }
     }
 
-    if (elem.id == "signName" || elem.id == "signLastName") {
+    if (elem.id == "signName" || elem.id == "signLastName" || elem.id == "filterName") {
         let isNameValid = validateName(elem, 2)
         if (isNameValid) {
             fieldIsValid(elem)
@@ -78,7 +78,7 @@ export function validateElem (elem) {
         }
     }
 
-    if (elem.id == "companySector" || elem.id == "companyIntention") {
+    if (elem.id == "companySector" || elem.id == "companyIntention" || elem.id == "filterSelect") {
         let selectionValue = validateSelection(elem)
         if (selectionValue) {
             fieldIsValid(elem)

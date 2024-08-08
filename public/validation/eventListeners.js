@@ -4,7 +4,6 @@ import { validateElem } from "./validations.js"
 export function addListener (list, type) {
     // This function adds a event listener to every element we pass
     // in the function call, so we can pass a list of elems
-    console.log("Listening to")
     list.forEach((elem) => {
         elem.addEventListener(type, () => {
             validateElem(elem)

@@ -115,18 +115,17 @@
 
             <section class="mid-banner">
                 <div class="banner-content">
-                    <div class="filter-box">
-                        <input type="text" class="filter-input" placeholder="Pesquise baseado em...">
-                        <select class="filter-select">
-                            <option value="name">Nome</option>
+                    <form class="filter-box" id="searchBar">
+                        <input type="text" class="filter-input" id="filterName" placeholder="Pesquise baseado em..." required>
+                        <select class="filter-select" id="filterSelect" required>
+                            <option value="placeholder">Filtro</option>
+                            <!-- <option value="name">Nome</option> -->
                             <option value="role">Cargo</option>
-                            <option value="region">Região</option>
-                            <option value="skill">Habilidade</option>
                         </select>
-                        <button class="filter-search">
+                        <button type="submit" class="filter-search">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </button>
-                    </div>
+                    </form>
                     
                 </div>
             </section>
@@ -189,6 +188,7 @@
                 </ul>
             </div>
         </footer>
-        <script type="module" src="./interactions/profile-display.js"></script>
+        <script type="module" src="./requisitions/profilesFetch.js"></script>
+        <script type="module" src="./requisitions/profileSearchBar.js"></script>
     </body>
 </html>

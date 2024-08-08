@@ -36,9 +36,31 @@ const updateUser = async (req, res) => {
     }
 }
 
+const filterUserByRole = async (req, res) => {
+    try {
+        const allUsers = await userService.getAllUser()
+        const filteredUsers = allUsers.filter(user => user.UserInfo.general_role.includes(req.params.general_role))
+        res.status(200).json(filteredUsers)
+    } catch (error) {
+        res.status(400).json({ error: error.message })
+    }
+}
+
+// const filterUserByName = async (req, res) => {
+//     try {
+//         const allUsers = await userService.getAllUser()
+//         const filteredUsers = allUsers.filter(user => user.UserInfo.first_name.includes(req.params.first_name))
+//         res.status(200).json(filteredUsers)
+//     } catch (error) {
+//         res.status(400).json({ error: error.message })
+//     }
+// }
+
 module.exports = {
     createUser,
     getUser,
     getAllUser,
-    updateUser
+    updateUser,
+    filterUserByRole
+    // filterUserByName
 }

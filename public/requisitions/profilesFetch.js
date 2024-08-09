@@ -12,6 +12,10 @@ const insertOnScreen = async (curriculumArray) => {
         const resumeDiv = document.createElement('div')
         resumeDiv.classList.add('card-curriculum')
         resumeDiv.id = `${curriculum.id}`
+
+        // ALTERAR O LAYOUT QUE VIRÁ A SER EXIBIDO
+        // PERMITINDO ELE SER CLICÁVEL PARA REDIRECIONAR PARA OUTRA PÁGINA
+
         let resumeStyle = `
             <div class="curriculum-image">
                 <img src="./assets/images/logo_ee_old.png">

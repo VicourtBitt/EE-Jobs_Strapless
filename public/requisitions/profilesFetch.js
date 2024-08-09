@@ -1,5 +1,5 @@
 export const fetchCurriculums = async (method= "users") => {
-    const request = await fetch(`http://localhost:3001/${method}`)
+    const request = await fetch(`http://34.95.142.6:3001/${method}`)
     const infoGathered = await request.json()
     await insertOnScreen(infoGathered)
 }

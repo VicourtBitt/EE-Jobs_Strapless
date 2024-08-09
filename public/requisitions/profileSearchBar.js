@@ -17,5 +17,12 @@ searchBar.addEventListener('submit', (e) => {
     // }
 })
 
+searchBar.addEventListener("keydown", () => {
+    let inputValue = searchBarInput[0].value
+    if (inputValue == "") {
+        fetchCurriculums(`users/`)
+    }
+})
+
 addListener(searchBarInput, 'keydown')
 addListener(searchBarSelect, 'mouseup')

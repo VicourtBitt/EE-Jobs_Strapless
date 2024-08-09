@@ -1,4 +1,4 @@
-const { UserRegister, UserInfo, PhoneNumber, Address } = require('../model')
+const { UserRegister, UserInfo, PhoneNumber, Address, JobExperience } = require('../model')
 
 const createUser = async (userData) => {
     const { 
@@ -16,10 +16,10 @@ const createUser = async (userData) => {
 
 const getUser = async (userId) => {
     const user = await UserRegister.findByPk(userId, {
-        include: {
+        include: [{
             model: UserInfo,
             include: [Address, PhoneNumber],
-        }
+        }, JobExperience]
     })
 
     return user

@@ -3,9 +3,9 @@ const skillController = require("../controller/skillController")
 
 const router = express.Router()
 
-router.post('/skill', skillController.createSkill)
-router.get('/skill/:id', skillController.getSkill)
-router.get('/skill', skillController.getAllSkills)
-router.delete('/skill/:id', skillController.deleteSkill)
+router.post('/api/skill', skillController.createSkill)
+router.get('/api/skill/:id', skillController.getSkill)
+router.get('/api/skill', skillController.getAllSkills)
+router.delete('/api/skill/:id', skillController.deleteSkill)
 
 module.exports = router

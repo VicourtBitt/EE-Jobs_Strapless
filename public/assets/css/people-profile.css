@@ -1,20 +1,43 @@
 @import url('./import.css');
 
+.main-banner { 
+    height: 320px;
+}
+
+.mid-banner {
+    min-height: 400px;
+    max-height: 640px;
+    padding: 1rem;
+}
+
+.banner-content {
+    max-width: 750px;
+}
+
+#ExtraInfo {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .profile-main-section {
-    width: 90%;
+    max-width: 500px;
     height: 90%;
     display: flex;
     flex-direction: row;
-    max-width: 1200px;
     border-radius: 20px;
-}
+    background-color: #d1d2d3;
+    border: 4px solid rgba(0, 0, 0, 0.75);
+    max-width: 1200px;
+    transition: 500ms;
 
-.profile-main-section , .banner-content{
-    border: 1px solid rgba(0, 0, 0, 0.35);
+    &:hover {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        transform: scale(1.01);
+    }
 }
 
 .profile-photo {
@@ -38,6 +61,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    width: 280px;
 }
 
 .people-photo-box {
@@ -45,15 +69,42 @@ body {
     justify-content: center;
     align-items: center;
     border-right: 1px solid rgba(0, 0, 0, 0.35);
+    height: 100%;
+    width: 220px;
 }
 
 .job-card {
-    height: 140px;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 160px;
+    width: 95%;
+    transition: 500ms;
+
+    &:hover {
+        transform: scale(1.02);
+        background: #d1d2d3;
+    }
+
+    &:first-child {
+        margin-top: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.35);
+        border-radius: 0 20px 0 0;
+    }
+
+    &:last-child {
+        border: 1px solid rgba(0, 0, 0, 0.35);
+        border-radius: 0 0 20px 0;
+    }
 
     &:not(:last-child) {
-        border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+        border: 1px solid rgba(0, 0, 0, 0.35)
     }
+}
+
+.people-name {
+    padding: 0.5rem;
+    text-align: center;
 }
 
 h3 {
@@ -61,48 +112,65 @@ h3 {
     font-weight: normal;
 }
 
-.mid-banner {
-    height: clamp(220px, 220px, 660px);
-    overflow-y: auto;
-}
-
 .bottom-banner {
     height: 100px;
+}
+
+#JobTable {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: nowrap;
+    overflow-y: scroll;
+}
+
+.job-company, .job-info {
+    padding: 0.25rem 0.5rem;
+}
+
+.job-company {
+    font-size: 20px;
+}
+
+.job-info {
+    font-weight: normal;
+    font-size: 18px;
 }
 
 @media (max-width: 575.8px) {
     .profile-main-section {
         flex-direction: column;
-        width: clamp(345px, 415px)
-    
+        width: 375px
     }
 
     .people-photo-box {
         border-right: none;
+        width: 100%;
         border-bottom: 1px solid rgba(0, 0, 0, 0.35);
-        height: 220px
     }
 
     .people-info-box {
         height: 160px;
-    }
-
-    .people-name {
-        padding: 0.5rem;
-        text-align: center;
+        width: 100%;
     }
     
     .main-banner {
         height: 420px;
     }
 
-    .mid-banner {
-        height: 420px
+    .job-company, .job-info {
+        padding: 0.25rem 0.5rem;
     }
-   
-    #JobTable {
-        display: flex;flex-direction: column;
-        justify-content: space-evenly;
+
+    .job-company {
+        font-size: 20px;
+    }
+
+    .job-info {
+        font-weight: normal;
+        font-size: 18px;
     }
 }
 
@@ -113,10 +181,6 @@ h3 {
         max-width: 500px;
     }
 
-    .main-banner {
-        height: 320px
-    }
-
     .people-photo-box {
         width: 240px;
     }
@@ -125,30 +189,14 @@ h3 {
         display: flex;
         width: 280px;
     }
-
-    .mid-banner {
-        height: 420px;
-    }
 }
 
 @media (min-width: 768px) and (max-width: 991.8px) {
-
+    
 }
 
 @media (min-width: 992px) and (max-width: 1439.8px) {
-    .profile-main-section {
-        flex-direction: row;
-    }
-
-    .people-photo-box {
-        width: 280px;
-        height: 240px
-    }
-
-    .people-name-box {
-        width: auto;
-    }
-
+ 
 }
 
 @media (min-width: 1440px) {

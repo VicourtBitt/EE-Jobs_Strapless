@@ -42,7 +42,7 @@ const showUser = async (UserInfo, Address) => {
             </h3>
         </div>
     `
-
+    document.title = `Perfil de ${UserInfo.first_name} ${UserInfo.last_name}`
     userDiv.innerHTML = mainCardLayout
     userCard.appendChild(userDiv)
 }
@@ -54,13 +54,21 @@ const showJob = async (JobExperiences) => {
 
         const jobCardLayout = `
             <div class="company-info">
-                <h2 id='CompanyName' class='people-info'>
+                <h2 id='CompanyName' class='job-company'>
                     ${job.CompanyRegister.company_name}
                 </h2>
 
-                <h3 id='RoleName' class='people-info'>
+                <h2 id='RoleName' class='job-info'>
+                    ${job.CompanyRegister.company_sector}
+                </h2>
+
+                <h2 id='RoleName' class='job-info'>
                     ${job.role_at_time}
-                </h3>
+                </h2>
+                
+                <h2 id='RoleName' class='job-info'>
+                    R$${job.average_payment}
+                </h2>
             </div>
 
         `

@@ -1,5 +1,5 @@
 import { addListener } from "../validation/eventListeners.js"
-import { fetchCurriculums } from "./profilesFetch.js"
+import { fetchIntoTable } from "./fetchUsers.js"
 
 const searchBar = document.getElementById('searchBar')
 const searchBarInput = document.querySelectorAll('#filterName')
@@ -10,17 +10,17 @@ searchBar.addEventListener('submit', (e) => {
     let inputValue = searchBarInput[0].value
     let selectValue = searchBarSelect[0].value
     if (selectValue == "role") {
-        fetchCurriculums(`users/search/${inputValue}`)
+        fetchIntoTable(`users/search/${inputValue}`)
     } 
     // else if (selectValue == "name") {
-        // fetchCurriculums(`users/search/${inputValue}`)
+        // fetchIntoTable(`users/search/${inputValue}`)
     // }
 })
 
 searchBar.addEventListener("keydown", () => {
     let inputValue = searchBarInput[0].value
     if (inputValue == "") {
-        fetchCurriculums(`users/`)
+        fetchIntoTable(`users/`)
     }
 })
 

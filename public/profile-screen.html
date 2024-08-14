@@ -1,5 +1,3 @@
-<!-- CRIAR PÁGINA QUE TROQUE DE TITULO DINAMICAMENTE, QUE ARMAZENE VALOR EM LOCALSTORAGE
-FAÇA A QUERIE E ENTÃO DÊ DISPLAY NO USER -->
 <!DOCTYPE html>
 <html lang="en">
     <head>        
@@ -23,22 +21,14 @@ FAÇA A QUERIE E ENTÃO DÊ DISPLAY NO USER -->
         <link rel="icon" type="favicon/text" href="./assets/icon/favicon.ico">
 
         <!-- Specific Media Query -->
-        <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/people-profile.css">
         
-        <title>EE-Jobs — Início</title>
+        <title>Perfil de: </title>
     </head>
 
     <body>
-        <!-- 
-            Dando um pequeno resumo dessa reconstrução do HTML:
-            Para os curiosos, a primeira versão havia sido feita utilizando bootstrap, que para quem não sabe, é um framework
-            para desenvolvimento web mais fácil e ágil, focando em clases pré-definidas e componentes pré-estilizados, o que já
-            alivia a vida do desenvolvedor. Porém, existem algumas limitações ao usar Bootstrap, literalmente quando você não 
-            está acostumado a utilizar ele tanto, você acaba perdendo a prática com ele e preferindo reutilizar o bom e velho HTML
-            CSS padrão.
-
-            Ainda iremos seguir uma estruturação MUITO semelhante, com as limitações de design que eu (Victor) como desenvolvedor
-            back-end sofro para criar designs interessantes.
+        <!--
+            Fazer tela de usuário com fetch específico.
 
             Ass: Victor Bittencourt
         -->
@@ -100,75 +90,20 @@ FAÇA A QUERIE E ENTÃO DÊ DISPLAY NO USER -->
         </header>
 
         <main>
-            <!-- Banner que completa a parte superior do design -->
-            <section class="main-banner">
-                <div class="main-content">
-                    <div class="main-text-content">
-                        <h1 class="main-text-title">Suas experiências valorizadas</h1>
-                        <p class="main-text-parag">
-                            Ferramenta de realocação dos mais experiêntes do mercado. Aqui, valorizamos seus
-                            conhecimentos acima de tudo! Volte ao ápice, venha com e.e-jobs! Entre em contato abaixo.
-                        </p>
-
-                        <div class="user-register-buttons">
-                            <button id="btnSignin" class="button button-signin">Cadastre-se hoje!</button>
-                            <button id="btnLogin" class="button button-login">Já possuo cadastro</button>
-                        </div>
-
-                        <span class="availability-text">
-                            Disponível para
-                            <a href="" class="mobile-availability" disabled>
-                                <i class="fa-brands fa-android"></i>
-                            </a>
-
-                            <a href="" class="mobile-availability" disabled>
-                                <i class="fa-brands fa-apple"></i>
-                            </a>
-                        </span>
-                    </div>
-
-                    <div class="top-image-content">
-                        <img class="top-sneaky-image" src="assets/images/obj_elderly_man.webp" alt="Idoso sentado mexendo em um computador">
-                    </div>
-
-                </div>
-
+            <!-- GENERIC USER INFO BANNER -->
+            <section class="main-banner" id="UserCard">
+            
             </section>
 
             <section class="mid-banner">
-                <div class="banner-content">
-                    <div class="image-content">
-                        <img class="banner-image" src="assets/images/obj_curriculum.png" alt="Desenho de um currículo">
-                    </div>
-
-                    <div class="text-content">
-                        <h1 class="content-title">Mostre as suas capacitações</h1>
-                        <p class="content-text">
-                            Envie o seu currículo para as diversas empresas parceiras 
-                            do nosso programa. Ás vezes, o que elas mais precisam é de
-                            alguém com bastante experiência!
-                        </p>
-                        <a href="/profiles.html" class="button button-about">Saiba mais</a>
-                    </div>
+                <div class="banner-content" id="JobTable">
 
                 </div>
             </section>
 
             <section class="bottom-banner">
                 <div class="banner-content">
-                    <div class="text-content">
-                        <h1 class="content-title">Obtenha suporte</h1>
-                        <p class="content-text">
-                            Aqui, nosso programa tem um atendimento especializado direcionado 
-                            para você, assim como as nossas empresas parceiras. Estamos de braços
-                            abertos para dar todo suporte necessário para você.
-                        </p>
-                        <a href="/login-screen.html#doubtSection" class="button button-about">Saiba mais</a>
-                    </div>
-
-                    <div class="image-content">
-                        <img class="banner-image" src="assets/images/obj_support_talk.png" alt="Desenho de um currículo">
-                    </div>
+                
                 </div>
             </section>
         </main>
@@ -223,6 +158,6 @@ FAÇA A QUERIE E ENTÃO DÊ DISPLAY NO USER -->
             </div>
         </footer>
 
-        <script type="module" src="./interactions/indexInteractions.js"></script>
+        <script type="module" src="./requisitions/profileShowUser.js"></script>
     </body>
 </html>

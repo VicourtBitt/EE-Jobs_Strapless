@@ -1,4 +1,4 @@
-const { UserRegister, UserInfo, PhoneNumber, Address, JobExperience } = require('../model')
+const { UserRegister, UserInfo, PhoneNumber, Address, JobExperience, SkilledWith, CompanyRegister } = require('../model')
 
 const createUser = async (userData) => {
     const { 
@@ -19,7 +19,10 @@ const getUser = async (userId) => {
         include: [{
             model: UserInfo,
             include: [Address, PhoneNumber],
-        }, JobExperience]
+        }, {
+            model: JobExperience,
+            include: CompanyRegister
+        }]
     })
 
     return user

@@ -133,7 +133,8 @@
 
     &:hover{
         background: #d1d2d3;
-        transform: scale(1.05)
+        transform: scale(1.05);
+        cursor: pointer;
     }
 }
 

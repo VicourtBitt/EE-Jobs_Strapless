@@ -1,0 +1,156 @@
+@import url('./import.css');
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.profile-main-section {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    border-radius: 20px;
+}
+
+.profile-main-section , .banner-content{
+    border: 1px solid rgba(0, 0, 0, 0.35);
+}
+
+.profile-photo {
+    height: 180px;
+}
+
+.people-name, .people-info {
+    text-align: center;
+}
+
+.people-info {
+    padding: 0.25rem
+}
+
+.people-locality {
+    text-align: right;
+    padding: 0.25rem 1rem;
+}
+
+.people-info-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.people-photo-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid rgba(0, 0, 0, 0.35);
+}
+
+.job-card {
+    height: 140px;
+    width: 100%;
+
+    &:not(:last-child) {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+    }
+}
+
+h3 {
+    text-align: center;
+    font-weight: normal;
+}
+
+.mid-banner {
+    height: clamp(220px, 220px, 660px);
+    overflow-y: auto;
+}
+
+.bottom-banner {
+    height: 100px;
+}
+
+@media (max-width: 575.8px) {
+    .profile-main-section {
+        flex-direction: column;
+        width: clamp(345px, 415px)
+    
+    }
+
+    .people-photo-box {
+        border-right: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+        height: 220px
+    }
+
+    .people-info-box {
+        height: 160px;
+    }
+
+    .people-name {
+        padding: 0.5rem;
+        text-align: center;
+    }
+    
+    .main-banner {
+        height: 420px;
+    }
+
+    .mid-banner {
+        height: 420px
+    }
+   
+    #JobTable {
+        display: flex;flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.8px) {
+
+    .profile-main-section {
+        display: flex;
+        max-width: 500px;
+    }
+
+    .main-banner {
+        height: 320px
+    }
+
+    .people-photo-box {
+        width: 240px;
+    }
+
+    .people-info-box {
+        display: flex;
+        width: 280px;
+    }
+
+    .mid-banner {
+        height: 420px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.8px) {
+
+}
+
+@media (min-width: 992px) and (max-width: 1439.8px) {
+    .profile-main-section {
+        flex-direction: row;
+    }
+
+    .people-photo-box {
+        width: 280px;
+        height: 240px
+    }
+
+    .people-name-box {
+        width: auto;
+    }
+
+}
+
+@media (min-width: 1440px) {
+
+}

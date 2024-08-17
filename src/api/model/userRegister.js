@@ -15,9 +15,6 @@ const UserRegister = sequelize.define("UserRegister", {
     cpf_cnpj: {
         type: DataTypes.STRING,
         allowNull: false,
-        validate: {
-            max: 14
-        },
         unique: true
     },
 })

@@ -1,6 +1,15 @@
 const sequelize = require('../config/database')
 const userService = require('../services/userService');
 
+const postUser = async (req, res) => {
+    try {
+        const { userInfo, userRegister } = await userService.postUser(req.body)
+        res.status(201).json({msg: userInfo, userRegister})
+    } catch (error) {
+        res.status(400).json({error: error})
+    }
+}
+
 const createUser = async (req, res) => {
     try {
         const user = await userService.createUser(req.body)
@@ -75,6 +84,7 @@ module.exports = {
     getAllUser,
     updateUser,
     filterUserByRole,
-    getByName
+    getByName,
+    postUser
     // filterUserByName
 }

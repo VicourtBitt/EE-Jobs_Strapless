@@ -43,12 +43,91 @@
             <!-- Banner que completa a parte superior do design -->
             <section class="main-banner">
                 <div class="main-content">
-                    <div style="border: 1px solid black; width: 540px">
+                    <form class="register-form" id="userRegister">
+                        <h2 class="formulary-title">INFORMAÇÕES PESSOAIS</h2>
+                        <label for="nameInput">
+                            <input
+                                type="text" id="nameInput" class="formulary-input"
+                                placeholder="Insira seu nome..." name="nameInput"
+                            >
+                        </label>
 
-                    </div>
+                        <label for="surnameInput">
+                            <input
+                                type="text" id="surnameInput" class="formulary-input"
+                                placeholder="Insira seu sobrenome..." name="surnameInput"
+                            >
+                        </label>
+
+                        <label for="genderInput">
+                            <select 
+                                id="genderInput" class="formulary-input"  name="genderInput"
+                            >
+                                <option value="placeholder">Selecione um gênero</option>
+                                <option value="Masculino">Masculino</option>
+                                <option value="Feminino">Feminino</option>
+                                <option value="Não-Binário">Não-Binário</option>
+                            </select>
+                        </label>
+
+                        <label for="ageInput">
+                            <input
+                                type="number" id="ageInput" class="formulary-input"
+                                placeholder="Insira sua idade" min="45" max="90" name="ageInput"
+                            >
+                        </label>
+
+                        <label for="cpfInput">
+                            <input
+                                type="text" id="cpfInput" class="formulary-input"
+                                placeholder="Insira seu CPF/CNPJ (somente números)"
+                                min="11" max="14" name="cpfInput"
+                            >
+                        </label>
+
+                        <label for="emailInput">
+                            <input
+                                type="text" id="emailInput" class="formulary-input"
+                                placeholder="Insira seu email..." name="emailInput"
+                            >
+                        </label>
+
+                        <label for="roleInput">
+                            <input
+                                type="text" id="roleInput" class="formulary-input"
+                                placeholder="Insira seu cargo..." name="roleInput"
+                            >
+                        </label>
+
+                        <button
+                            type="submit" 
+                            class="button" id="userInfo">
+                            Enviar
+                        </button>
+                    </form>
                 </div>
 
             </section>
+
+            <dialog class="modal" id="modal">
+                <div class="modal-layout">
+                    <h2 class="modal-title">Conferiu todas as suas informações?</h2>
+
+                    <button 
+                        type="click" class="modal-button agree"
+                        id="agreeModal"
+                    >
+                        Sim, continuar
+                    </button>
+
+                    <button 
+                        type='click' class="modal-button disagree"
+                        id="disagreeModal"
+                    >
+                        Não, retornar
+                    </button>
+                </div>
+            </dialog>
 
             <section class="mid-banner">
                 <div class="banner-content">
@@ -56,15 +135,12 @@
                 </div>
             </section>
 
-            <section class="bottom-banner">
-                <div class="banner-content">
-                    
-                </div>
-            </section>
         </main>
         
         <footer>
         </footer>
+        <script type='module' src="./validation/userRegisterValidation.js"></script>
+        <script type='module' src="./requisitions/userRegister.js"></script>
         <script src="./components/logo.js"></script>
         <script type='module' src="./components/navigation.js"></script>
         <script src="./components/footer.js"></script>

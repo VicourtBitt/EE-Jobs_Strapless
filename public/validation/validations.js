@@ -22,6 +22,25 @@ export function validateSelection (elem) {
     }
 }
 
+// AGE VALIDATION
+export function validateAge (elem) {
+    let age = elem.value
+    if (age < 45) {
+        return false
+    }
+    return true
+}
+
+export function validateCpfCnpj (elem) {
+    let cpfOuCnpj = elem.value
+    if (cpfOuCnpj.length == 11) {
+        return /^([0-9]{3}\.?[0-9]{3}\.?[0-9]{3}\-?[0-9]{2}|[0-9]{2}\.?[0-9]{3}\.?[0-9]{3}\/?[0-9]{4}\-?[0-9]{2})$/.test(cpfOuCnpj)
+    } else if (cpfOuCnpj.length == 14) {
+        return /[0-9]{2}\.?[0-9]{3}\.?[0-9]{3}\/?[0-9]{4}\-?[0-9]{2}/.test(cpfOuCnpj)
+    }
+    return false
+}
+
 // VALIDATION SETTER
 export function fieldIsValid (elem, hint= false) {
     if (hint) {
@@ -46,12 +65,11 @@ export function fieldIsNotValid (elem, hint= false) {
     elem.classList.add("input-invalid")
 }
 
-
 // RUN ELEMENT VALIDATION
 // TEST ELEMENT VALIDATION
 export function validateElem (elem) {
     // This function is called whenever it should validate a element
-    if (elem.id == "loginEmail" || elem.id == "signEmail" || elem.id == "companyEmail") {
+    if (elem.id == "loginEmail" || elem.id == "signEmail" || elem.id == "companyEmail" || elem.id == 'emailInput') {
         let isEmailValid = validateEmail(elem.value)
         if (isEmailValid) {
             fieldIsValid(elem)
@@ -60,7 +78,7 @@ export function validateElem (elem) {
         }
     }
 
-    if (elem.id == "signName" || elem.id == "signLastName" || elem.id == "filterName") {
+    if (elem.id == "signName" || elem.id == "signLastName" || elem.id == "filterName" || elem.id == 'nameInput' || elem.id == 'surnameInput') {
         let isNameValid = validateName(elem, 2)
         if (isNameValid) {
             fieldIsValid(elem)
@@ -69,7 +87,7 @@ export function validateElem (elem) {
         }
     }
 
-    if (elem.id == "companyName") {
+    if (elem.id == "companyName" || elem.id == 'roleInput') {
         let isNameValid = validateName(elem, 5)
         if (isNameValid) {
             fieldIsValid(elem)
@@ -78,9 +96,27 @@ export function validateElem (elem) {
         }
     }
 
-    if (elem.id == "companySector" || elem.id == "companyIntention" || elem.id == "filterSelect") {
+    if (elem.id == "companySector" || elem.id == "companyIntention" || elem.id == "filterSelect" || elem.id == 'genderInput') {
         let selectionValue = validateSelection(elem)
         if (selectionValue) {
+            fieldIsValid(elem)
+        } else {
+            fieldIsNotValid(elem)
+        }
+    }
+
+    if (elem.id == 'ageInput') {
+        let isAgeValid = validateAge(elem)
+        if (isAgeValid) {
+            fieldIsValid(elem)
+        } else {
+            fieldIsNotValid(elem)
+        }
+    }
+
+    if (elem.id == 'cpfInput') {
+        let isCpfCnpjValid = validateCpfCnpj(elem)
+        if (isCpfCnpjValid) {
             fieldIsValid(elem)
         } else {
             fieldIsNotValid(elem)

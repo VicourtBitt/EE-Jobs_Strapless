@@ -20,6 +20,17 @@
     justify-content: center;
 }
 
+.register-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid black;
+    width: 540px;
+    border-radius: 20px
+}
+
 @media (max-width: 575.8px) {
     .main-banner {
         height: 900px;
@@ -49,5 +60,18 @@
 }
 
 @media (min-width: 1440px) {
-    
+    .formulary-input {
+        width: 240px
+    }
+
+    .main-banner {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        height: 400px
+    }
+
+    .main-content {
+        height: 360px
+    }
 }

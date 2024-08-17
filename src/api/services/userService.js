@@ -1,5 +1,22 @@
 const { UserRegister, UserInfo, PhoneNumber, Address, JobExperience, SkilledWith, CompanyRegister } = require('../model')
 
+const postUser = async (userData) => {
+    const { cpf_cnpj, first_name, last_name, gender, age, general_role, email } = userData
+    const userRegister = await UserRegister.create({ cpf_cnpj: cpf_cnpj })
+    const userJSON = await userRegister.toJSON()
+    const userInfo = await UserInfo.create({
+            first_name: first_name,
+            last_name: last_name, 
+            gender: gender, 
+            age: age, 
+            email: email,
+            general_role: general_role,
+            userRegisterId: `${userJSON.id}`
+        })
+        // console.log(userInfo)
+    return userRegister, userInfo
+}
+
 const createUser = async (userData) => {
     const { 
         CPF_CNPJ, first_name, last_name, gender, age,
@@ -53,4 +70,5 @@ module.exports = {
     getUser,
     getAllUser,
     updateUser,
+    postUser
 }

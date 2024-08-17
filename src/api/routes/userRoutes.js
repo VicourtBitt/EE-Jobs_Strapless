@@ -9,5 +9,6 @@ router.get('/api/users', userController.getAllUser)
 router.put('/api/users/:id', userController.updateUser)
 router.get('/api/users/search/:general_role', userController.filterUserByRole)
 // router.get('/users/search/:first_name', userController.filterUserByName)
+router.get('/api/search/user_names', userController.getByName)
 
 module.exports = router

@@ -31,6 +31,7 @@ footer{
     text-decoration: none;
     color: black;
     transition: 500ms;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .footer-item__social{

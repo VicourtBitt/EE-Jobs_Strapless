@@ -1,3 +1,4 @@
+const sequelize = require("../config/database")
 const companyService = require("../services/companyService")
 
 const createCompany = async (req, res) => {
@@ -36,9 +37,19 @@ const updateCompany = async (req, res) => {
     }
 }
 
+const companyNames = async (req, res) => {
+    try {
+        const [results, metadata ] = await sequelize.query(' SELECT company_name FROM CompanyRegisters ')
+        res.status(200).json(results)
+    } catch (error) {
+        res.status(400).json({error: error.message})
+    }
+}
+
 module.exports = {
     createCompany,
     getCompany,
     getAllCompanies,
-    updateCompany
+    updateCompany,
+    companyNames
 }

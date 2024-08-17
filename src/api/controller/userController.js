@@ -1,3 +1,4 @@
+const sequelize = require('../config/database')
 const userService = require('../services/userService');
 
 const createUser = async (req, res) => {
@@ -46,6 +47,18 @@ const filterUserByRole = async (req, res) => {
     }
 }
 
+const getByName = async (req, res) => {
+    try {
+        const [results, metadata] = await sequelize.query(`
+            SELECT CONCAT(first_name, ' ', last_name) AS full_name
+            FROM UserInfos
+        `)
+        res.status(200).json(results)
+    } catch (error) {
+        res.status(400).json({ error: error.message })
+    }
+}
+
 // const filterUserByName = async (req, res) => {
 //     try {
 //         const allUsers = await userService.getAllUser()
@@ -61,6 +74,7 @@ module.exports = {
     getUser,
     getAllUser,
     updateUser,
-    filterUserByRole
+    filterUserByRole,
+    getByName
     // filterUserByName
 }

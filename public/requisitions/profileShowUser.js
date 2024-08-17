@@ -2,6 +2,17 @@ import { gatherUser, getAddress, getJob} from "./profileScreenFetch.js"
 
 const userCard = document.getElementById('UserCard')
 const jobTable = document.getElementById('JobTable')
+const btnModal = document.getElementById('OpenModalBtn')
+const modal = document.getElementById('InfoModal')
+const closeModal = document.getElementById('closeModal')
+
+btnModal.addEventListener('click', (e) => {
+    modal.showModal()
+})
+
+closeModal.addEventListener('click', (e) => {
+    modal.close()
+})
 
 document.addEventListener('DOMContentLoaded', (e) => {
     showInfo()
@@ -15,6 +26,7 @@ const showInfo = async () => {
 }
 
 const showUser = async (UserInfo, Address) => {
+    await addIntoModal(UserInfo)
     const userDiv = document.createElement('div')
     userDiv.classList.add('profile-main-section')
     userDiv.id = 'UserProfile'
@@ -76,4 +88,35 @@ const showJob = async (JobExperiences) => {
         jobDiv.innerHTML = jobCardLayout
         jobTable.appendChild(jobDiv)
     })
+}
+
+const addIntoModal = async (UserInfo) => {
+    const { PhoneNumbers, email } = UserInfo
+    const modalInfo = document.createElement('div')
+    modalInfo.classList.add('modal-info')
+
+    let infoLayout = ``
+
+    if (!PhoneNumbers[0]) {
+        infoLayout += `
+            <div class='modal-contact'>
+                Telefone: Nenhum Cadastrado
+            </div>
+        `
+    } else {
+        infoLayout += `
+            <div class='modal-contact'>
+                Telefone: ${PhoneNumbers[0].phone_number}
+            </div>
+        `
+    }
+
+    infoLayout += `
+        <div class='modal-contact'>
+            Email: ${email}
+        </div>
+    `
+
+    modalInfo.innerHTML += infoLayout
+    modal.appendChild(modalInfo)
 }

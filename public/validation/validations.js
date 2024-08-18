@@ -31,6 +31,15 @@ export function validateAge (elem) {
     return true
 }
 
+// VALIDATE PASSWORD
+export function validatePassword (elem) {
+    let size = elem.value.length
+    if (size < 8) {
+        return false
+    }
+    return true
+}  
+
 export function validateCpfCnpj (elem) {
     let cpfOuCnpj = elem.value
     if (cpfOuCnpj.length == 11) {
@@ -117,6 +126,15 @@ export function validateElem (elem) {
     if (elem.id == 'cpfInput') {
         let isCpfCnpjValid = validateCpfCnpj(elem)
         if (isCpfCnpjValid) {
+            fieldIsValid(elem)
+        } else {
+            fieldIsNotValid(elem)
+        }
+    }
+
+    if (elem.id == 'passwordInput') {
+        let isPasswordValid = validatePassword(elem)
+        if (isPasswordValid) {
             fieldIsValid(elem)
         } else {
             fieldIsNotValid(elem)

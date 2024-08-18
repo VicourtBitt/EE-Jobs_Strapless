@@ -68,10 +68,10 @@
         display: flex;
         justify-content: space-around;
         flex-direction: column;
-        height: 400px
+        height: 460px
     }
 
     .main-content {
-        height: 360px
+        height: 420px
     }
 }

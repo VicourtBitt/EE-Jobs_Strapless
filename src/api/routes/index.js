@@ -9,6 +9,7 @@ const users = require("./userRoutes.js")
 const companies = require('./companyRoutes.js')
 const jobExperiences = require('./jobExperienceRoutes.js')
 const skills = require('./skillRoutes.js')
+const emails = require('./emailRoutes.js')
 
 module.exports = appDB => {
     appDB.use(
@@ -18,5 +19,6 @@ module.exports = appDB => {
         companies,
         jobExperiences,
         skills,
+        emails
     )
 }

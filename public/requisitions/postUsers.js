@@ -20,6 +20,7 @@ const treatUsers = (values) => {
         gender : values.gender,
         age : values.age,
         email: values.email,
+        password: values.password,
         general_role : values.general_role
     }
 

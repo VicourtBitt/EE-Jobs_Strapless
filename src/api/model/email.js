@@ -12,11 +12,16 @@ const Email = sequelize.define("Email", {
     email: {
         type: DataTypes.STRING,
         allowNull: false,
+        unique: true
     },
-    userInfoId: {
+    password: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    userRegisterId: {
         type: DataTypes.INTEGER,
         references: {
-            model: "UserInfos",
+            model: "UserRegisters",
             key: "id"
         }
     }

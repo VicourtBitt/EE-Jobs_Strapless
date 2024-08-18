@@ -1,20 +1,25 @@
-const { UserRegister, UserInfo, PhoneNumber, Address, JobExperience, SkilledWith, CompanyRegister } = require('../model')
+const { create } = require('lodash')
+const { UserRegister, UserInfo, PhoneNumber, Address, JobExperience, CompanyRegister, Email } = require('../model')
 
 const postUser = async (userData) => {
-    const { cpf_cnpj, first_name, last_name, gender, age, general_role, email } = userData
+    const { cpf_cnpj, first_name, last_name, gender, age, general_role, email, password } = userData
     const userRegister = await UserRegister.create({ cpf_cnpj: cpf_cnpj })
     const userJSON = await userRegister.toJSON()
     const userInfo = await UserInfo.create({
-            first_name: first_name,
-            last_name: last_name, 
-            gender: gender, 
-            age: age, 
-            email: email,
-            general_role: general_role,
-            userRegisterId: `${userJSON.id}`
-        })
-        // console.log(userInfo)
-    return userRegister, userInfo
+        first_name: first_name,
+        last_name: last_name, 
+        gender: gender, 
+        age: age, 
+        general_role: general_role,
+        userRegisterId: `${userJSON.id}`
+    })
+    const createEmail = await Email.create({
+        email: email,
+        password: password,
+        userRegisterId: `${userJSON.id}`
+    })
+    await console.log(createEmail)
+    return {userRegister, userInfo, createEmail}
 }
 
 const createUser = async (userData) => {

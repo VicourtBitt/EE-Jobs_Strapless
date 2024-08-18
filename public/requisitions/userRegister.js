@@ -43,7 +43,9 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
     agreeModal.addEventListener('click', async (e) => {
         const elemValues = getElemValues(inputs, selects)
-        await postUsers(elemValues)
+        await postUsers(elemValues).then(
+            window.location.pathname = '/login-screen.html'
+        )
     })
 
     function getElemValues (inputs, selects) {
@@ -60,6 +62,8 @@ document.addEventListener('DOMContentLoaded', (e) => {
                 newObject["cpf_cnpj"] = elem.value
             } else if (elem.id == 'emailInput') {
                 newObject["email"] = elem.value
+            } else if (elem.id == 'passwordInput') {
+                newObject['password'] = elem.value
             } else if (elem.id == 'roleInput') {
                 newObject['general_role'] = elem.value
             }

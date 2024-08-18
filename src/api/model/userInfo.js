@@ -29,11 +29,6 @@ const UserInfo = sequelize.define("UserInfo", {
             max: 85
         }
     },
-    email: {
-        type: DataTypes.STRING,
-        allowNull: false,
-        unique: true
-    },
     general_role: {
         type: DataTypes.STRING,
         allowNull: false

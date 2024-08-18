@@ -21,8 +21,8 @@ JobExperience.belongsTo(UserRegister, {foreignKey: "userRegisterId"})
 UserInfo.hasMany(PhoneNumber, {foreignKey: "userInfoId"})           // X
 PhoneNumber.belongsTo(UserInfo, {foreignKey: "userInfoId"})         // X
 
-UserInfo.hasMany(Email, {foreignKey: "userInfoId"})                 // X
-Email.belongsTo(UserInfo, {foreignKey: "userInfoId"})               // X
+UserRegister.hasOne(Email, {foreignKey: "userRegisterId"})                 // X
+Email.belongsTo(UserInfo, {foreignKey: "userRegisterId"})               // X
 
 Skill.hasMany(SkilledWith, {foreignKey: "skillId"})                 // X
 SkilledWith.belongsTo(Skill, {foreignKey: "skillId"})               // X

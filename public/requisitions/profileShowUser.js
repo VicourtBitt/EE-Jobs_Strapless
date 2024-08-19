@@ -28,8 +28,12 @@ const showInfo = async () => {
 
 const showUser = async (UserInfo, Address, Email) => {
     await addIntoModal(UserInfo, Email)
+
+    const newBanner = document.createElement('div')
+    newBanner.classList.add('card-banner')
+
     const userDiv = document.createElement('div')
-    userDiv.classList.add('profile-main-section')
+    userDiv.classList.add('user-card')
     userDiv.id = 'UserProfile'
     
     const mainCardLayout = `
@@ -57,7 +61,10 @@ const showUser = async (UserInfo, Address, Email) => {
     `
     document.title = `Perfil de ${UserInfo.first_name} ${UserInfo.last_name}`
     userDiv.innerHTML = mainCardLayout
-    userCard.appendChild(userDiv)
+
+    newBanner.appendChild(userDiv)
+
+    userCard.appendChild(newBanner)
 }
 
 const showJob = async (JobExperiences) => {

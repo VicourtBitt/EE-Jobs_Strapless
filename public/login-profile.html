@@ -21,7 +21,7 @@
         <link rel="icon" type="favicon/text" href="./assets/icon/favicon.ico">
 
         <!-- Specific Media Query -->
-        <link rel="stylesheet" type="text/css" href="assets/css/user-register.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/people-profile.css">
         
         <title>EE-Jobs — Meu perfil</title>
     </head>
@@ -34,103 +34,41 @@
 
         <main>
             <!-- Banner que completa a parte superior do design -->
-            <section class="main-banner">
-                <div class="main-content">
-                    <form class="register-form" id="userRegister">
-                        <h2 class="formulary-title">INFORMAÇÕES PESSOAIS</h2>
-                        <label for="nameInput">
-                            <input
-                                type="text" id="nameInput" class="formulary-input"
-                                placeholder="Insira seu nome..." name="nameInput"
-                            >
-                        </label>
+            <section class="main-banner" id="UserCard">
 
-                        <label for="surnameInput">
-                            <input
-                                type="text" id="surnameInput" class="formulary-input"
-                                placeholder="Insira seu sobrenome..." name="surnameInput"
-                            >
-                        </label>
-
-                        <label for="genderInput">
-                            <select 
-                                id="genderInput" class="formulary-input"  name="genderInput"
-                            >
-                                <option value="placeholder">Selecione um gênero</option>
-                                <option value="Masculino">Masculino</option>
-                                <option value="Feminino">Feminino</option>
-                                <option value="Não-Binário">Não-Binário</option>
-                            </select>
-                        </label>
-
-                        <label for="ageInput">
-                            <input
-                                type="number" id="ageInput" class="formulary-input"
-                                placeholder="Insira sua idade" min="45" max="90" name="ageInput"
-                            >
-                        </label>
-
-                        <label for="cpfInput">
-                            <input
-                                type="text" id="cpfInput" class="formulary-input"
-                                placeholder="Insira seu CPF/CNPJ (somente números)"
-                                min="11" max="14" name="cpfInput"
-                            >
-                        </label>
-
-                        <label for="emailInput">
-                            <input
-                                type="text" id="emailInput" class="formulary-input"
-                                placeholder="Insira seu email..." name="emailInput"
-                            >
-                        </label>
-
-                        <label for="roleInput">
-                            <input
-                                type="text" id="roleInput" class="formulary-input"
-                                placeholder="Insira seu cargo..." name="roleInput"
-                            >
-                        </label>
-
-                        <label for="passwordInput">
-                            <input
-                                type="password" id="passwordInput" class="formulary-input"
-                                placeholder="Crie uma senha (>= 8 caracteres)" name="passwordInput"
-                            >
-                        </label>
-
-                        <button
-                            type="submit" 
-                            class="button" id="userInfo">
-                            Enviar
-                        </button>
-                    </form>
-                </div>
             </section>
 
-            <dialog class="modal" id="modal">
-                <div class="modal-layout">
-                    <h2 class="modal-title">Conferiu todas as suas informações?</h2>
-
-                    <button 
-                        type="click" class="modal-button agree"
-                        id="agreeModal"
-                    >
-                        Sim, continuar
-                    </button>
-
-                    <button 
-                        type='click' class="modal-button disagree"
-                        id="disagreeModal"
-                    >
-                        Não, retornar
-                    </button>
-                </div>
-            </dialog>
-
             <section class="mid-banner">
-                <div class="banner-content">
-                    
+                <div class="banner-content" id="changer">
+                    <div class="info-changer">
+                        <div class="changer-hints">
+                            <h1>Utilize os botões abaixo para cadastrar ou ver informações</h1>
+                        </div>
+
+                        <div>
+                            <button class="button" id="chgJob">
+                                Manipular Trabalhos
+                            </button>
+                        </div>
+
+                        <div>
+                            <button class="button" id="chgAddress">
+                                Manipular Endereços
+                            </button>
+                        </div>
+
+                        <div>
+                            <button class="button" id="chgPhones">
+                                Manipular Telefones
+                            </button>
+                        </div>
+
+                        <div>
+                            <button class="button" id="chgRole">
+                                Manipular Cargo
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
@@ -139,7 +77,7 @@
             <!-- THE FOOTER IS ALSO A JS RENDER COMPONENT -->
         </footer>
 
-        <script src="./requisitions/loginProfile.js"></script>
+        <script type="module" src="./requisitions/loginProfile.js"></script>
 
          <!-- HEADER, NAVIGATION BAR AND FOOTER AS RENDER COMPONENTS -->
          <script src="./components/logo.js"></script>

@@ -37,6 +37,24 @@ const getAllUser = async (req, res) => {
     }
 }
 
+const updateRole = async (req, res) => {
+    try {
+        const userInfo = await userService.updateUserRole(req.params.id, req.body)
+        res.status(200).json(userInfo)
+    } catch (error) {
+        res.status(400).json({error: error.message})
+    }
+}
+
+const getUserRole = async (req, res) => {
+    try {
+        const userInfos = await userService.getUserRole(req.params.userId)
+        res.status(200).json(userInfos)
+    } catch (error) {
+        res.status(400).json({error: error.message})
+    }
+}
+
 const updateUser = async (req, res) => {
     try {
         const userInfo = await userService.updateUser(req.params.id, req.body)
@@ -49,7 +67,7 @@ const updateUser = async (req, res) => {
 const filterUserByRole = async (req, res) => {
     try {
         const allUsers = await userService.getAllUser()
-        const filteredUsers = allUsers.filter(user => user.UserInfo.general_role.includes(req.params.general_role))
+        const filteredUsers = allUsers.filter(user => user.UserInfo.general_role.includes(req.params.role))
         res.status(200).json(filteredUsers)
     } catch (error) {
         res.status(400).json({ error: error.message })
@@ -58,11 +76,8 @@ const filterUserByRole = async (req, res) => {
 
 const getByName = async (req, res) => {
     try {
-        const [results, metadata] = await sequelize.query(`
-            SELECT CONCAT(first_name, ' ', last_name) AS full_name
-            FROM UserInfos
-        `)
-        res.status(200).json(results)
+        const [results, metadata] = await userService.getAllByName(req.params.name)
+        res.status(200).json([results])
     } catch (error) {
         res.status(400).json({ error: error.message })
     }
@@ -83,6 +98,8 @@ module.exports = {
     getUser,
     getAllUser,
     updateUser,
+    updateRole,
+    getUserRole,
     filterUserByRole,
     getByName,
     postUser

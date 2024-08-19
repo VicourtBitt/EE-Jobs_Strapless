@@ -60,3 +60,58 @@
     font-size: 18px;
     height: 18px;
 }
+
+.info-row {
+    border-collapse: collapse;
+    & td {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow-x: hidden;
+        padding: 0.25rem;
+        box-sizing: border-box;
+        border: 1px solid black;
+        border-collapse: collapse;
+        line-height: 30px;
+        max-height: 30px;
+    }
+
+    &:nth-child(odd) {
+        background: #c6c6c6;
+    }
+}
+
+.form-table {
+    border-collapse: collapse;
+    height: clamp(90px, 20%, 400px);
+    overflow-y: scroll;
+}
+
+.form-id {
+    width: 20px;
+    text-align: center;
+}
+
+.form-name {
+    width: 150px;
+}
+
+.form-company {
+    width: 180px;
+}
+
+.form-role {
+    width: 250px;
+}
+
+.form-payment {
+    text-align: right;
+    width: 100px;
+}
+
+.table-sheet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 775px;
+}

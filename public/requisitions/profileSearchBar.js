@@ -10,11 +10,11 @@ searchBar.addEventListener('submit', (e) => {
     let inputValue = searchBarInput[0].value
     let selectValue = searchBarSelect[0].value
     if (selectValue == "role") {
-        fetchIntoTable(`users/search/${inputValue}`)
+        fetchIntoTable(`search/general_role/${inputValue}`)
     } 
-    // else if (selectValue == "name") {
-        // fetchIntoTable(`users/search/${inputValue}`)
-    // }
+    else if (selectValue == "name") {
+        fetchIntoTable(`search/user_names/${inputValue}`)
+    }
 })
 
 searchBar.addEventListener("keydown", () => {

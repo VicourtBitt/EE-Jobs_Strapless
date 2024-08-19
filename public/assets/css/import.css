@@ -10,6 +10,7 @@
 @import url("card-content.css");
 @import url("forms.css");
 @import url("modal.css");
+@import url('profile-cards.css');
 
 :root{
     --first-color: #6C757D;

@@ -1,4 +1,5 @@
-const sequelize = require('../config/database')
+const {Op} = require('sequelize')
+const sequelize  = require('../config/database')
 const { UserRegister, UserInfo, PhoneNumber, Address, JobExperience, CompanyRegister, Email } = require('../model')
 
 const postUser = async (userData) => {
@@ -69,8 +70,49 @@ const getAllUser = async () => {
             model: UserInfo,
         }
     })
-
     return user
+}
+
+const getAllByName = async (param) => {
+    const user = await UserRegister.findAll({
+        include: {
+            model: UserInfo,
+            where : {
+                [Op.or]: [
+                    {
+                        first_name: {
+                            [Op.like] : `%${param}%`
+                        }
+                    }, {
+                        last_name: {
+                            [Op.like] : `%${param}%`
+                        }
+                    }
+                ]
+            }
+        }
+    })
+    return user
+}
+
+const getUserRole = async (param) => {
+    const [results, metadata] = await sequelize.query(`
+        SELECT ui.id, CONCAT(ui.first_name, ' ', ui.last_name) AS full_name,
+        ui.general_role
+        FROM UserRegisters ur
+        JOIN UserInfos ui ON ur.id = ui.userRegisterId
+        WHERE ur.id = ${param}
+    `)
+    return results
+}
+
+const updateUserRole = async (id, data) => {
+    const [results, metadata] = await sequelize.query(`
+        UPDATE UserInfos
+        SET general_role = '${data}'
+        WHERE UserInfos.userRegisteredId = ${id}
+    `)
+    return results
 }
 
 const updateUser = async (id, data) => {
@@ -87,6 +129,9 @@ module.exports = {
     createUser,
     getUser,
     getAllUser,
+    getUserRole,
+    updateUserRole,
+    getAllByName,
     updateUser,
     postUser
 }

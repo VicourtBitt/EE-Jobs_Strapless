@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
     agreeModal.addEventListener('click', async (e) => {
         const elemValues = getElemValues(inputs, selects)
         await postUsers(elemValues).then(
-            window.location.pathname = '/login-screen.html'
+            window.location.pathname = '/obrigado.html'
         )
     })
 

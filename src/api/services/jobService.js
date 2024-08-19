@@ -1,3 +1,4 @@
+const sequelize = require("../config/database")
 const { JobExperience } = require("../model")
 
 const createJobExperience = async (jobData) => {
@@ -26,6 +27,19 @@ const updateJobExperience = async (id, data) => {
     return jobInfo
 }
 
+const getJobInfos = async (userId) => {
+    const [results, metadata] = await sequelize.query(`
+        SELECT je.id, CONCAT(ui.first_name, ' ', ui.last_name) AS full_name,
+        je.role_at_time, je.average_payment, cr.company_name 
+        FROM JobExperiences je
+        JOIN CompanyRegisters cr on je.companyRegisterId = cr.id 
+        JOIN UserRegisters ur ON je.userRegisterId = ur.id
+        JOIN UserInfos ui on ui.userRegisterId = ur.id
+        WHERE ur.id = '${userId}';
+    `)
+    return results
+}
+
 const deleteJobExperience = async (id) => {
     try {
         const jobToDelete = await JobExperience.findByPk(id)
@@ -42,6 +56,7 @@ module.exports = {
     createJobExperience,
     getJobExperience,
     getAllJobExperiences,
+    getJobInfos,
     updateJobExperience,
     deleteJobExperience
 }

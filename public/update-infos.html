@@ -21,9 +21,9 @@
         <link rel="icon" type="favicon/text" href="./assets/icon/favicon.ico">
 
         <!-- Specific Media Query -->
-        <link rel="stylesheet" type="text/css" href="assets/css/thanks.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/user-register.css">
         
-        <title>A E&E te agradece!</title>
+        <title>EE-Jobs</title>
     </head>
 
     <body>
@@ -36,23 +36,24 @@
             <!-- Banner que completa a parte superior do design -->
             <section class="main-banner">
                 <div class="main-content">
-                    <h1 class="main-text-title">
-                        Obrigado por ter escolhido a E&E Jobs!
-                    </h1>
-                    <p class="main-text-parag">
-                        Agora vá encher seu perfil com as suas informações para melhorar suas chances de
-                        ser visto por recrutadores! Logue na sua conta e comece a editar!
-                    </p>
+                    <div class="table-sheet">
+                        <h1 class="profile-greetings" id="typeOfOperation">
+
+                        </h1>
+                        <table class="form-table" id="toDisplay">
+
+                        </table>    
+                    </div>
                 </div>
             </section>
 
             <section class="mid-banner">
-                <div class="banner-content">
-                    <button class="button"
-                        id="goBack"
-                        style="background: #c6c6c6"
-                    >
-                        Voltar ao Início
+                <div class="banner-content"
+                    style="display: flex; flex-direction: column; justify-content: center; align-items: center;"
+                >
+                    <input class="formulary-input" type="text" placeholder="" id="chgField">
+                    <button class="button" id="chgButton">
+                        Atualizar
                     </button>
                 </div>
             </section>
@@ -62,10 +63,11 @@
             <!-- THE FOOTER IS ALSO A JS RENDER COMPONENT -->
         </footer>
 
-        <script src="./interactions/thanks.js"></script>
-
+        <script type="module" src="./interactions/updateInfos.js"></script>
+        
         <!-- HEADER, NAVIGATION BAR AND FOOTER AS RENDER COMPONENTS -->
         <script src="./components/logo.js"></script>
+        <script type='module' src="./components/navigation.js"></script>
         <script src="./components/footer.js"></script>
     </body>
 </html>

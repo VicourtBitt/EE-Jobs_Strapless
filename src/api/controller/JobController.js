@@ -27,6 +27,15 @@ const getAllJobs = async (req, res) => {
     }
 }
 
+const getJobByUser = async (req, res) => {
+    try {
+        const jobs = await jobService.getJobInfos(req.params.userId)
+        res.status(200).json(jobs)
+    } catch (error) {
+        res.status(400).json({error: error.message})
+    }
+}
+
 const updateJob = async (req, res) => {
     try {
         const jobInfo = await jobService.updateJobExperience(req.params.id, req.body)
@@ -50,6 +59,7 @@ module.exports = {
     createJob,
     getJob,
     getAllJobs,
+    getJobByUser,
     updateJob,
     deleteJob
 }

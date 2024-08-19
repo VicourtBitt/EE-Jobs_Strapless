@@ -1,0 +1,42 @@
+@import url('import.css');
+
+.main-banner {
+    height: 600px;
+}
+
+.main-content, .banner-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main-text-title {
+    text-align: center;
+    width: clamp(450px, 75%, 650px)
+}
+
+.main-text-parag {
+    text-align: center;
+    width: clamp(250px, 75%, 550px);
+}
+
+.mid-banner {
+    height: 300px
+}
+
+@media (max-width: 575.8px) {
+}
+
+@media (min-width: 576px) and (max-width: 767.8px) {
+}
+
+@media (min-width: 768px) and (max-width: 991.8px) {
+}
+
+@media (min-width: 992px) and (max-width: 1439.8px) {
+}
+
+@media (min-width: 1440px) {
+ 
+}

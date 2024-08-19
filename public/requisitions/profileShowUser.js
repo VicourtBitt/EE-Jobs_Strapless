@@ -3,7 +3,8 @@ import { gatherUser, getAddress, getJob} from "./profileScreenFetch.js"
 const userCard = document.getElementById('UserCard')
 const jobTable = document.getElementById('JobTable')
 const btnModal = document.getElementById('OpenModalBtn')
-const modal = document.getElementById('InfoModal')
+const modal = document.querySelector('dialog')
+const modalBox = document.getElementById('InfoModal')
 const closeModal = document.getElementById('closeModal')
 
 btnModal.addEventListener('click', (e) => {
@@ -19,14 +20,14 @@ document.addEventListener('DOMContentLoaded', (e) => {
 })
 
 const showInfo = async () => {
-    const { UserInfo, JobExperiences } = await gatherUser()
+    const { UserInfo, JobExperiences, Email } = await gatherUser()
     const Address = await UserInfo.Address
-    await showUser(UserInfo, Address)
+    await showUser(UserInfo, Address, Email)
     await showJob(JobExperiences)
 }
 
-const showUser = async (UserInfo, Address) => {
-    await addIntoModal(UserInfo)
+const showUser = async (UserInfo, Address, Email) => {
+    await addIntoModal(UserInfo, Email)
     const userDiv = document.createElement('div')
     userDiv.classList.add('profile-main-section')
     userDiv.id = 'UserProfile'
@@ -90,8 +91,8 @@ const showJob = async (JobExperiences) => {
     })
 }
 
-const addIntoModal = async (UserInfo) => {
-    const { PhoneNumbers, email } = UserInfo
+const addIntoModal = async (UserInfo, Email) => {
+    const { PhoneNumbers } = UserInfo
     const modalInfo = document.createElement('div')
     modalInfo.classList.add('modal-info')
 
@@ -111,12 +112,22 @@ const addIntoModal = async (UserInfo) => {
         `
     }
 
-    infoLayout += `
+    if (!Email) {
+        infoLayout += `
         <div class='modal-contact'>
-            Email: ${email}
+            Email: ${'Não cadastrado'}
         </div>
     `
+    } else {
+        infoLayout += `
+        <div class='modal-contact'>
+            Email: ${Email.email}
+        </div>
+    `
+    }
+
+    
 
     modalInfo.innerHTML += infoLayout
-    modal.appendChild(modalInfo)
+    modalBox.appendChild(modalInfo)
 }

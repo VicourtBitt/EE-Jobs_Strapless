@@ -18,6 +18,7 @@
 .main-content {
     display: flex;
     justify-content: center;
+    height: 420px
 }
 
 .register-form {
@@ -31,25 +32,48 @@
     border-radius: 20px
 }
 
+.formulary-input {
+    width: 240px
+}
+
+.main-banner {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 460px
+}
+
 @media (max-width: 575.8px) {
     .main-banner {
-        height: 900px;
+        height: 500px;
+    }
+
+    .formulary-input {
+        width: 300px;
+    }
+
+    .main-content {
+        height: 460px;
     }
 }
 
 @media (min-width: 576px) and (max-width: 767.8px) {
     .main-banner {
-        height: 800px;
+        height: 500px;
+    }
+
+    .formulary-input {
+        width: 300px;
     }
 
     .main-content {
-        height: 780px;
+        height: 460px;
     }
 }
 
 @media (min-width: 768px) and (max-width: 991.8px) {
     .main-banner{
-        height: 780px;
+        height: 460px;
     }
 }
 
@@ -60,18 +84,5 @@
 }
 
 @media (min-width: 1440px) {
-    .formulary-input {
-        width: 240px
-    }
-
-    .main-banner {
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-        height: 460px
-    }
-
-    .main-content {
-        height: 420px
-    }
+    
 }

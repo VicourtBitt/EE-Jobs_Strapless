@@ -1,4 +1,4 @@
-const { create } = require('lodash')
+const sequelize = require('../config/database')
 const { UserRegister, UserInfo, PhoneNumber, Address, JobExperience, CompanyRegister, Email } = require('../model')
 
 const postUser = async (userData) => {
@@ -40,11 +40,24 @@ const getUser = async (userId) => {
     const user = await UserRegister.findByPk(userId, {
         include: [{
             model: UserInfo,
-            include: [Address, PhoneNumber],
+            include: [{
+                model: Address,
+                attributes: ['city', 'state', 'country']
+            }, {
+                model: PhoneNumber
+            }],
         }, {
             model: JobExperience,
-            include: CompanyRegister
-        }]
+            attributes: ['id', 'role_at_time', 'average_payment'],
+            include: {
+                model: CompanyRegister,
+                attributes: ['company_name', 'company_email', 'company_sector']
+            }
+        }, {
+            model: Email,
+            attributes: ['email']
+        }],
+        attributes: ['cpf_cnpj']
     })
 
     return user

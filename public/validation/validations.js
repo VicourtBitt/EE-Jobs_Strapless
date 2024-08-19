@@ -132,7 +132,7 @@ export function validateElem (elem) {
         }
     }
 
-    if (elem.id == 'passwordInput') {
+    if (elem.id == 'passwordInput' || elem.id == 'loginPassword') {
         let isPasswordValid = validatePassword(elem)
         if (isPasswordValid) {
             fieldIsValid(elem)

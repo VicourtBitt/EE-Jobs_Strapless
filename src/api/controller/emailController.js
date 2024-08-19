@@ -11,7 +11,7 @@ const createEmail = async (req, res) => {
 
 const getEmail = async (req, res) => {
     try {
-        const results = await emailService.getEmail(req.body)
+        const results = await emailService.getEmail(req.params.email)
         res.status(200).json(results)
     } catch (error) {
         res.status(400).json({error: error.message})

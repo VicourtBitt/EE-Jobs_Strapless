@@ -27,17 +27,9 @@
     </head>
 
     <body>
-        <!-- 
-            Certamente reestruturar o código, ainda mais trazendo o design do bootstrap para
-            o HTML nativo, é algo até que complicado, não em complexidade, mas de manter o foco
-            ou interesse. 
-
-            Não sou preguiçoso, só tenho um foco meio zoado para essas coisas, ainda assim estamos
-            conseguindo sem muito problema, ainda existem manutenções para serem feitas.
-            
-            Ass: Victor Bittencourt
-        -->
         <header>
+            <!-- NOW THE READER WORKS AS A JS RENDER COMPONENT -->
+            <!-- WE DID THIS BECAUSE THE HEADERS WERE 30% OF THE HTML -->
         </header>
 
         <main>
@@ -59,7 +51,6 @@
                         </p>
                     </div>
                 </div>
-
             </section>
 
             <section class="mid-banner">
@@ -119,9 +110,12 @@
         </main>
         
         <footer>
+            <!-- THE FOOTER IS ALSO A JS RENDER COMPONENT -->
         </footer>
 
         <script type="module" src="./interactions/our-partnersInteraction.js"></script>
+        
+        <!-- HEADER, NAVIGATION BAR AND FOOTER AS RENDER COMPONENTS -->
         <script src="./components/logo.js"></script>
         <script type='module' src="./components/navigation.js"></script>
         <script src="./components/footer.js"></script>

@@ -27,20 +27,9 @@
     </head>
 
     <body>
-        <!-- 
-            Dando um pequeno resumo dessa reconstrução do HTML:
-            Para os curiosos, a primeira versão havia sido feita utilizando bootstrap, que para quem não sabe, é um framework
-            para desenvolvimento web mais fácil e ágil, focando em clases pré-definidas e componentes pré-estilizados, o que já
-            alivia a vida do desenvolvedor. Porém, existem algumas limitações ao usar Bootstrap, literalmente quando você não 
-            está acostumado a utilizar ele tanto, você acaba perdendo a prática com ele e preferindo reutilizar o bom e velho HTML
-            CSS padrão.
-
-            Ainda iremos seguir uma estruturação MUITO semelhante, com as limitações de design que eu (Victor) como desenvolvedor
-            back-end sofro para criar designs interessantes.
-
-            Ass: Victor Bittencourt
-        -->
         <header>
+            <!-- NOW THE READER WORKS AS A JS RENDER COMPONENT -->
+            <!-- WE DID THIS BECAUSE THE HEADERS WERE 30% OF THE HTML -->
         </header>
 
         <main>
@@ -74,9 +63,7 @@
                     <div class="top-image-content">
                         <img class="top-sneaky-image" src="assets/images/obj_elderly_man.webp" alt="Idoso sentado mexendo em um computador">
                     </div>
-
                 </div>
-
             </section>
 
             <section class="mid-banner">
@@ -94,7 +81,6 @@
                         </p>
                         <a href="/profiles.html" class="button button-about">Saiba mais</a>
                     </div>
-
                 </div>
             </section>
 
@@ -118,9 +104,12 @@
         </main>
         
         <footer>
+            <!-- THE FOOTER IS ALSO A JS RENDER COMPONENT -->
         </footer>
 
         <script type="module" src="./interactions/indexInteractions.js"></script>
+
+        <!-- HEADER, NAVIGATION BAR AND FOOTER AS RENDER COMPONENTS -->
         <script src="./components/logo.js"></script>
         <script type='module' src="./components/navigation.js"></script>
         <script src="./components/footer.js"></script>

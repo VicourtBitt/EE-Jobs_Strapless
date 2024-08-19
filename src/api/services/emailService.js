@@ -11,17 +11,13 @@ const createRegister = async (emailData) => {
     return emailRegister
 }
 
-const getEmail = async (emailName) => {
-    const [results, metadate] = sequelize.query(`
-        SELECT email, password, userRegisterId
-        FROM Emails
-        WHERE email = '${emailName}'
-    `)
-    return results
+const getEmail = async (emailInfo) => {
+    const info = await Email.findOne({ where : { email: `${emailInfo}` }})
+    return info
 }
 
 const updatePassword = async (email ,newPassword) => {
-    const [results, metadata] = sequelize.query(`
+    const [results, metadata] = await sequelize.query(`
         UPDATE Emails
         SET password = '${newPassword}'
         WHERE email = '${email}'

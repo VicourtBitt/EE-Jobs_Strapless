@@ -42,8 +42,8 @@ body {
 
 .modal {
     border-radius: 15px;
-    height: 120px;
-    width: 360px;
+    height: 200px;
+    width: 400px;
     left: 0;
     right: 0;
     top: 0;
@@ -60,22 +60,11 @@ body {
     height: 20%;
     display: flex;
     justify-content: center;
+    line-height: 40px;
 }
 
-.modal-contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 49.5%
-}
-
-.modal-info {
-    width: 100%;
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+.modal-layout {
+    height: 200px;
 }
 
 .profile-photo {

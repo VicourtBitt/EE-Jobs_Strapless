@@ -23,7 +23,7 @@
         <!-- Specific Media Query -->
         <link rel="stylesheet" type="text/css" href="assets/css/user-register.css">
         
-        <title>EE-Jobs — Meu perfil</title>
+        <title>A E&E te agradece!</title>
     </head>
 
     <body>
@@ -106,6 +106,7 @@
                         </button>
                     </form>
                 </div>
+
             </section>
 
             <dialog class="modal" id="modal">
@@ -139,11 +140,13 @@
             <!-- THE FOOTER IS ALSO A JS RENDER COMPONENT -->
         </footer>
 
-        <script src="./requisitions/loginProfile.js"></script>
+        <!-- VALIDATIONS AND REQUISITIONS -->
+        <script type='module' src="./validation/userRegisterValidation.js"></script>
+        <script type='module' src="./requisitions/userRegister.js"></script>
 
-         <!-- HEADER, NAVIGATION BAR AND FOOTER AS RENDER COMPONENTS -->
-         <script src="./components/logo.js"></script>
-         <script type='module' src="./components/navigation.js"></script>
-         <script src="./components/footer.js"></script>
+        <!-- HEADER, NAVIGATION BAR AND FOOTER AS RENDER COMPONENTS -->
+        <script src="./components/logo.js"></script>
+        <script type='module' src="./components/navigation.js"></script>
+        <script src="./components/footer.js"></script>
     </body>
 </html>

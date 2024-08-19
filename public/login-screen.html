@@ -37,6 +37,18 @@
         </header>
 
         <main>
+            <!--  -->
+            <dialog class="modal" id="modal">
+                <div class="modal-layout">
+                    <h3 class="modal-title">
+                        Login ou senha errados
+                    </h3>
+                    <button class="modal-button" id="closeModal">
+                        Continuar
+                    </button>
+                </div>
+            </dialog>
+
             <!-- Banner que completa a parte superior do design -->
             <section class="main-banner">
                 <div class="main-content">
@@ -63,7 +75,12 @@
                                 required
                             >
 
-                            <button type="submit" class="button button-signin">Login</button>
+                            <button 
+                                form="formulary-login" type="submit" 
+                                class="button button-signin"
+                            >
+                                Login
+                            </button>
                         </form>
                     </div>
 
@@ -180,6 +197,7 @@
         <script type="module" src="./validation/login-validation.js"></script>
         <script type="module" src="./validation/signin-validation.js"></script>
         <script src="./interactions/login-screenRegister.js"></script>
+        <script type="module" src="./validation/userLogin.js"></script>
         <script src="./components/logo.js"></script>
         <script type='module' src="./components/navigation.js"></script>
         <script src="./components/footer.js"></script>

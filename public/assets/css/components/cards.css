@@ -1,0 +1,30 @@
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 280px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid black;
+    transition: 500ms;
+
+    &:hover{
+        background: #c6c6d6;
+        transform: scale(1.05);
+    }
+}
+
+/* CONTACT-US SOCIALS SHEET */
+.social-sheet {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    gap: 10px;
+}
+
+/* PROFILES GRID */
+/* This will be awful to implement, being honest */

@@ -1,17 +1,30 @@
-@import url("header.css");
-@import url("header-navigation.css");
-@import url("footer.css");
-@import url("main-content.css");
-@import url("banner-text-content.css");
-@import url("sneaky-content.css");
-@import url("image-content.css");
-@import url("text-content.css");
-@import url("contact-us.css");
-@import url("card-content.css");
-@import url("forms.css");
-@import url("modal.css");
+/* SPECIFIC CONTENTS */
+@import url('main-content.css');
+@import url('common-content.css');
+@import url('card-content.css');
+@import url('banners.css');
+@import url('sneaky-content.css');
+@import url('image-content.css');
+
+/* HEADER */
+@import url('header.css');
+@import url('header-navigation.css');
+
+/* FOOTER */
+@import url('footer.css');
+
+/* EVALUATE THIS */
+@import url('contact-us.css');
+
+/* FORMS, MODAL AND CARDS */
+@import url('forms.css');
+@import url('modal.css');
 @import url('profile-cards.css');
 
+/* BUTTONS */
+@import url('buttons.css');
+
+/* VARIABLES */
 :root{
     --first-color: #6C757D;
     --second-color: #343a40;
@@ -297,7 +310,7 @@ textarea {
         justify-content: center;
     }
 
-    .user-register-buttons{
+    .button-box {
         width: 95%;
     }
 

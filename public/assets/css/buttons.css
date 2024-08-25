@@ -1,0 +1,89 @@
+/* THIS IS THE BUTTONS DIV, OLD user-register-buttons */
+.buttons-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 75%;
+    justify-content: space-around;
+}
+
+
+/* THE SPECIFIC BUTTONS */
+.btn {
+    text-decoration: none;
+    height: 36px;
+    border: none;
+    border-radius: 10px;
+    height: 48px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 500ms;
+    width: 180px;
+
+    &:hover{
+        background: #128799;
+        transform: scale(1.1);
+    }
+}
+
+/* button color */
+.common {
+    background: var(--button-color);
+    color: var(--light);
+
+    &:hover {
+        background: #005cbe;
+    }
+}
+
+/* button color */
+.atention {
+    background: var(--auxiliar-secondary);
+    width: 200px;
+
+    &:hover {
+        background: #daa507;
+    }
+}
+
+/* button color */
+.info {
+    background: var(--auxiliar);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--light);
+    width: 120px;
+    text-align: center;
+    line-height: 48px;
+}
+
+/* THIS IS THE MODAL BUTTON */
+.modal-button {
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 500ms;
+
+    &:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 10px black;
+    }
+
+    &.agree {
+        background: #1dc247;
+
+        &:hover{
+            background: #2ee95d;
+        }
+    }
+
+    &.disagree {
+        background: #c21d1d;
+
+        &:hover{
+            background: #e92e2e;
+        }
+    }
+}

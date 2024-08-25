@@ -1,22 +1,4 @@
-@import url("import.css");
-
-/* 
-
-ESSE ARQUIVO É RESPONSÁVEL PELAS MEDIA QUERIES DA TELA DE "SOBRE"
-POSSUI ELEMENTOS GLOBAIS ASSIM COMO AS OUTRAS PÁGINAS, MAS TAMBÉM
-POSSUI SEU ELEMENTOS INDEPENDENTES.
-AS MEDIA QUERIES SÃO SEPARADAS POR 3 ESPAÇOS
-
-HEADER/FOOTER = Todo componente de estilização dos cabeçalhos ou
-rodapés que vai sofrer alteração
-
-CONTENT SECTION = Todo conteúdo dentro das seguintes classes globais
-main-banner, mid-banner, bottom-banner e banner-content
-
-INSIDE CONTENT = Todo conteudo independente dentro do banner-content
-no HTML. ALTERAR TAGS DE NOME ULTRA GENERICO
-
-*/
+@import url("../import.css");
 
 .card-sheet {
     gap: 0px;

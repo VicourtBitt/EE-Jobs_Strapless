@@ -21,19 +21,14 @@
         <link rel="icon" type="favicon/text" href="./assets/icon/favicon.ico">
 
         <!-- Specific Media Query -->
-        <link rel="stylesheet" type="text/css" href="assets/css/login-screen.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/pages/login-screen.css">
         
         <title>EE-Jobs — Login</title>
     </head>
 
     <body>
-        <!-- 
-            Até que não foi tão complicado refazer essa tela, só preciso validar os formulários antes
-            de tudo.
-
-            Ass: Victor Bittencourt
-        -->
         <header>
+            <!-- NOW THE HEADER IS A DYNAMIC COMPONENT -->
         </header>
 
         <main>
@@ -77,7 +72,7 @@
 
                             <button 
                                 form="formulary-login" type="submit" 
-                                class="button button-signin"
+                                class="btn common"
                             >
                                 Login
                             </button>
@@ -119,7 +114,12 @@
                                 required
                             >
 
-                            <button type="submit" id="btnRegister" class="button button-signin">Cadastre-se</button>
+                            <button 
+                                type="submit" id="btnRegister" 
+                                class="btn common"
+                            >
+                                Cadastre-se
+                            </button>
                         </form>
                     </div>
                 </div>
@@ -181,7 +181,11 @@
                             ></textarea>
                             <!-- <span></span> -->
 
-                            <button class="button button-about">Enviar</button>
+                            <button 
+                                class="btn info"
+                            >
+                                Enviar
+                            </button>
                         </form>
                     </div>
 

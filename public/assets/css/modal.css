@@ -41,34 +41,3 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
 }
-
-.modal-button {
-    width: 200px;
-    height: 40px;
-    border: none;
-    border-radius: 20px;
-    font-size: 18px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    transition: 500ms;
-
-    &:hover {
-        transform: scale(1.1);
-        box-shadow: 0 0 10px black;
-    }
-
-    &.agree {
-        background: #1dc247;
-
-        &:hover{
-            background: #2ee95d;
-        }
-    }
-
-    &.disagree {
-        background: #c21d1d;
-
-        &:hover{
-            background: #e92e2e;
-        }
-    }
-}

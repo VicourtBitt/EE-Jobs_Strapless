@@ -1,0 +1,46 @@
+.main-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background: var(--first-color);
+}
+
+.mid-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 900px;
+}
+
+.bottom-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px
+}
+
+.main-content, .banner-content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    min-width: 330px;
+    height: 95%;
+    max-width: 1080px;
+}
+
+.top-sneaky-image{
+    align-items: center;
+    justify-content: center;
+    transition: 500ms;
+
+    &:hover{
+        transform: scale(1.05);
+    }
+}
+
+.image-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

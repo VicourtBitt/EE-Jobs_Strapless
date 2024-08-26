@@ -5,6 +5,29 @@
     overflow: visible;
 }
 
+.card {
+    height: 220px;
+
+    &>img {
+        width: clamp(150px, 80%, 300px);
+    }
+}
+
+.grid {
+    padding: 0px;
+    overflow-y: visible;
+    grid-auto-rows: 220px;
+    gap: 0px;
+}
+
+.bottom-banner {
+    &> .banner-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 @media (max-width: 575.8px) {
     .main-banner{
         max-height: 480px;
@@ -16,7 +39,7 @@
     }
 
     .mid-banner{
-        height: 1640px;
+        height: 2080px;
     }
 
     .bottom-banner{
@@ -35,11 +58,6 @@
         flex-wrap: wrap;
     }
 
-    .card-partner{
-        width: 100%;
-        height: calc(100%/9)
-    }
-
     .partner-logo{
         width: 50%;
     }
@@ -55,7 +73,7 @@
     }
 
     .mid-banner{
-        height: 1640px;
+        height: 2080px;
     }
 
     .bottom-banner{
@@ -73,17 +91,20 @@
         flex-wrap: wrap;
     }
 
-    .card-partner{
-        width: 100%;
-        height: calc(100%/9)
-    }
-
     .partner-logo{
         width: 50%;
     }
 }
 
 @media (min-width: 768px) and (max-width: 991.8px) {
+    .mid-banner {
+        height: 1200px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .bottom-banner{
         max-height: 160px;
         text-align: center;
@@ -107,6 +128,10 @@
         flex-direction: column;
     }
 
+    .mid-banner {
+        min-height: 710px;
+    }
+
     .main-text-content{
         width: 80%;
     }
@@ -124,22 +149,14 @@
         height: 180px;
         padding: 0.5em 3em;
         box-sizing: border-box;
-        text-align: center;
-    }
-
-    .bottom-banner > .banner-content{
-        align-items: center;
-        display: flex;
-        justify-content: center;
     }
 
     .content-text{
         text-align: center;
     }
     
-    .card-sheet{
-        max-width: 1080px;
-        margin: 0px auto;
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -173,7 +190,7 @@
     }
 
     .mid-banner{
-        max-height: 900px;
+        max-height: 710px;
     }
 
     .bottom-banner{
@@ -184,18 +201,11 @@
         text-align: center;
     }
 
-    .bottom-banner > .banner-content{
-        align-items: center;
-        display: flex;
-        justify-content: center;
-    }
-
     .content-text{
         text-align: center;
     }
     
-    .card-sheet{
-        max-width: 1080px;
-        margin: 0px auto;
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 }

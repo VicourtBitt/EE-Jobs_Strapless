@@ -1,14 +1,5 @@
 @import url("../import.css");
 
-/* ############# CONTENT SECTION #############  */
-/* ############# CONTENT SECTION #############  */
-
-/* ############# INSIDE CONTENT ############# */
-/* ############# INSIDE CONTENT ############# */
-
-/* ############# HEADER AND FOOTER ############# */
-/* ############# HEADER AND FOOTER ############# */
-
 .filter-box{
     background: var(--first-color) ;
     display: flex;
@@ -43,6 +34,12 @@
     height: 40px;
 }
 
+.card {
+    flex-direction: column;
+    height: 300px;
+    width: 1fr;
+}
+
 @media (max-width: 575.8px) {
     .main-banner{
         height: 440px;
@@ -50,12 +47,6 @@
 
     .mid-banner{
         height: 90px;
-    }
-
-    .card-sheet{
-        display: flex;
-        justify-content: center;
-        height: 100%;
     }
 
     .bottom-banner > .banner-content{
@@ -85,18 +76,14 @@
         height: 400px;
     }
 
-    .card-sheet{
-        height: 100%;
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .main-text-title{
         text-align: center;
     }
 
-    .card-curriculum {
-        width: 48%;
-    }
-    
     .curriculum-data {
         display: flex;
         flex-direction: column;
@@ -104,7 +91,8 @@
     }
 
     .curriculum-name{
-        height: 60px    }
+        height: 60px    
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991.8px) {
@@ -116,8 +104,8 @@
         max-height: 90px;
     }
 
-    .card-sheet{
-        height: 100%;
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .mid-banner > .banner-content{
@@ -125,10 +113,9 @@
         flex-direction: column;
     }
 
-    .card-curriculum {
-        width: 48%;
+    .bottom-banner {
+        max-height: 600px;
     }
-
 }
 
 @media (min-width: 992px) and (max-width: 1439.8px) {
@@ -149,8 +136,8 @@
         box-sizing: border-box;
     }
 
-    .card-sheet{
-        height: 100%;
+    .grid{
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .top-image{
@@ -160,10 +147,6 @@
 
     .logo-title{
         font-size: 24px;
-    }
-
-    .card-curriculum {
-        width: 32%;
     }
 }
 
@@ -193,15 +176,7 @@
         width: auto;
     }
 
-    .card-sheet {
-        padding: 10px 0px;
-        box-sizing: border-box;
-        gap: 10px;
-        height: 600px;
-        border-bottom: 1px solid var(--dark);
-    }
-
-    .card-curriculum{
-        width: 24%;
+    .grid{
+        grid-template-columns: repeat(4, 1fr);
     }
 }

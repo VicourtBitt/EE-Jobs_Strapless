@@ -20,7 +20,7 @@ export const insertOnScreen = async (curriculumArray) => {
     // PARA SER INSERIDO NA TELA, CLICÁVEL
     curriculumArray.forEach((curriculum) => {
         const resumeDiv = document.createElement('div')
-        resumeDiv.classList.add('card-curriculum')
+        resumeDiv.classList.add('card')
         resumeDiv.id = `${curriculum.id}`
 
         // AQUI ESTÁ A PARTE DE TORNAR O CARD CLICÁVEL

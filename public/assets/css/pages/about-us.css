@@ -1,8 +1,16 @@
 @import url("../import.css");
 
-.card-sheet {
+.card {
+    flex-direction: column;
+    height: 360px;
+    width: 1fr;
+}
+
+.grid {
+    padding: 0px;
+    overflow-y: hidden;
     gap: 0px;
-    overflow: hidden;
+    grid-auto-rows: 360px;
 }
 
 .founders{
@@ -59,10 +67,6 @@
     .bottom-banner{
         height: 1540px
     }
-
-    .card-founder{
-        width: 100%;
-    }
 }
 
 @media (min-width: 576px) and (max-width: 767.8px) {
@@ -99,11 +103,11 @@
     }
 
     .bottom-banner{
-        height: 1540px;
+        height: 770px;
     }
 
-    .card-founder{
-        width: 100%;
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -131,12 +135,12 @@
     }
     
     .bottom-banner{
-        max-height: 780px;
-        height: 780px;
+        max-height: 770px;
+        height: 770px;
     }
 
-    .card-founder{
-        width: 49.5%;
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -185,8 +189,8 @@
         height: 380px;
     }
 
-    .card-founder{
-        width: 24.5%;
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
@@ -224,7 +228,7 @@
         height: 380px;
     }
 
-    .card-founder{
-        width: 24.5%;
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
